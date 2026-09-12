@@ -1,0 +1,2399 @@
+{
+  "directed": true,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "node_type": "CodebaseFile",
+      "language": "typescript",
+      "symbols": [],
+      "last_modified": "2026-09-12T22:05:08Z",
+      "id": "vite.config.ts"
+    },
+    {
+      "node_type": "CodebaseFile",
+      "language": "python",
+      "symbols": [
+        "StructuredOutputError",
+        "_is_json",
+        "_candidates",
+        "_extract_json_text",
+        "parse_llm_json"
+      ],
+      "last_modified": "2026-09-12T22:06:47Z",
+      "id": "runtime/structured_output.py"
+    },
+    {
+      "node_type": "CodebaseFile",
+      "language": "python",
+      "symbols": [
+        "_max_conn",
+        "_get_pool",
+        "_PooledConnection",
+        "connect",
+        "close_all",
+        "ensure_schema",
+        "reset_migration_cache",
+        "__init__",
+        "close",
+        "closed",
+        "__enter__",
+        "__exit__",
+        "__getattr__"
+      ],
+      "last_modified": "2026-09-12T22:06:47Z",
+      "id": "runtime/pg_pool.py"
+    },
+    {
+      "node_type": "CodebaseFile",
+      "language": "python",
+      "symbols": [
+        "main",
+        "_load_tenant_worker_module",
+        "_start_temporal_worker",
+        "_start_celery_worker"
+      ],
+      "last_modified": "2026-09-12T22:06:47Z",
+      "id": "runtime/worker.py"
+    },
+    {
+      "node_type": "CodebaseFile",
+      "language": "python",
+      "symbols": [],
+      "last_modified": "2026-09-12T22:06:47Z",
+      "id": "runtime/__init__.py"
+    },
+    {
+      "node_type": "CodebaseFile",
+      "language": "python",
+      "symbols": [
+        "_meter",
+        "_instrument",
+        "_record",
+        "record_llm_call",
+        "record_cache",
+        "record_retry",
+        "record_retrieval",
+        "configure_metrics",
+        "_reset_cache"
+      ],
+      "last_modified": "2026-09-12T22:06:47Z",
+      "id": "runtime/metrics.py"
+    },
+    {
+      "node_type": "CodebaseFile",
+      "language": "python",
+      "symbols": [
+        "_repo_root",
+        "_NoopSpan",
+        "agent_span",
+        "_stamp",
+        "tool_payloads_enabled",
+        "_serialise_payload",
+        "record_tool_call",
+        "resource_attributes",
+        "AgentIdentityProcessor",
+        "configure_tracing",
+        "configure_telemetry",
+        "current_trace_id",
+        "traceparent",
+        "inject_context",
+        "set_attribute",
+        "record_exception",
+        "is_recording",
+        "on_start"
+      ],
+      "last_modified": "2026-09-12T22:06:47Z",
+      "id": "runtime/tracing.py"
+    },
+    {
+      "node_type": "CodebaseFile",
+      "language": "python",
+      "symbols": [
+        "_strip_markdown_fences",
+        "propose_corrected_payload",
+        "run_self_correction_loop"
+      ],
+      "last_modified": "2026-09-12T22:06:47Z",
+      "id": "runtime/self_correction.py"
+    },
+    {
+      "node_type": "CodebaseFile",
+      "language": "python",
+      "symbols": [
+        "reset_input_guardrail",
+        "register_input_guardrail",
+        "resolve_mode",
+        "scrub_text",
+        "_default_scrub",
+        "detect_pii",
+        "scrub_messages",
+        "_claim"
+      ],
+      "last_modified": "2026-09-12T22:06:47Z",
+      "id": "runtime/input_guardrail.py"
+    },
+    {
+      "node_type": "CodebaseFile",
+      "language": "python",
+      "symbols": [
+        "as_bool",
+        "repo_root",
+        "_dotenv_value",
+        "load_env_file",
+        "shadowed_env",
+        "tenant_config",
+        "config_get",
+        "override",
+        "env_overrides",
+        "_cast",
+        "resolve_choice",
+        "resolve"
+      ],
+      "last_modified": "2026-09-12T22:06:47Z",
+      "id": "runtime/config.py"
+    },
+    {
+      "node_type": "CodebaseFile",
+      "language": "python",
+      "symbols": [
+        "_installed_version",
+        "_checkout_version",
+        "framework_version",
+        "is_source_checkout",
+        "_series",
+        "warn_if_declared_version_differs",
+        "_reset_cache"
+      ],
+      "last_modified": "2026-09-12T22:06:47Z",
+      "id": "runtime/version.py"
+    },
+    {
+      "node_type": "CodebaseFile",
+      "language": "python",
+      "symbols": [
+        "tls_enabled",
+        "temporal_address",
+        "connect"
+      ],
+      "last_modified": "2026-09-12T22:06:47Z",
+      "id": "runtime/temporal_client.py"
+    },
+    {
+      "node_type": "CodebaseFile",
+      "language": "python",
+      "symbols": [
+        "resolve_otlp_endpoint",
+        "span_exporter",
+        "metric_exporter",
+        "_exporter"
+      ],
+      "last_modified": "2026-09-12T22:06:47Z",
+      "id": "runtime/otlp.py"
+    },
+    {
+      "node_type": "CodebaseFile",
+      "language": "python",
+      "symbols": [
+        "VectorHit",
+        "VectorStore",
+        "_cosine",
+        "_identity_of",
+        "_retrieval_span",
+        "_record_hits",
+        "MemoryVectorStore",
+        "PgVectorStore",
+        "make_vector_store",
+        "add",
+        "query",
+        "__init__",
+        "_connect",
+        "_ensure_schema",
+        "_query"
+      ],
+      "last_modified": "2026-09-12T22:06:47Z",
+      "id": "runtime/vector_store.py"
+    },
+    {
+      "node_type": "CodebaseFile",
+      "language": "python",
+      "symbols": [
+        "UnstableIdempotencyKey",
+        "_canonical",
+        "make_key",
+        "IdempotencyStore",
+        "_RedisBackend",
+        "_PostgresBackend",
+        "__init__",
+        "get",
+        "set",
+        "purge_expired",
+        "_connect"
+      ],
+      "last_modified": "2026-09-12T22:06:47Z",
+      "id": "runtime/idempotency.py"
+    },
+    {
+      "node_type": "CodebaseFile",
+      "language": "python",
+      "symbols": [
+        "ModerationHookRequiredError",
+        "ModerationBlockedError",
+        "ModerationResult",
+        "reset_output_moderator",
+        "register_output_moderator",
+        "get_output_moderator",
+        "ModerationHookImportError",
+        "_repo_root",
+        "declared_hook_path",
+        "load_declared_moderator",
+        "_ensure_declared_moderator",
+        "resolve_mode",
+        "apply_output_moderation",
+        "__init__"
+      ],
+      "last_modified": "2026-09-12T22:06:47Z",
+      "id": "runtime/moderation.py"
+    },
+    {
+      "node_type": "CodebaseFile",
+      "language": "python",
+      "symbols": [
+        "_verify_signature",
+        "_verify_timestamped",
+        "ReplayWebhookHandler",
+        "main",
+        "do_POST",
+        "_json",
+        "_replay",
+        "log_message",
+        "_connect"
+      ],
+      "last_modified": "2026-09-12T22:06:47Z",
+      "id": "runtime/replay_webhook_server.py"
+    },
+    {
+      "node_type": "CodebaseFile",
+      "language": "python",
+      "symbols": [
+        "security_artefact_path"
+      ],
+      "last_modified": "2026-09-12T22:06:47Z",
+      "id": "runtime/security_paths.py"
+    },
+    {
+      "node_type": "CodebaseFile",
+      "language": "python",
+      "symbols": [
+        "ToolNotAllowedError",
+        "ToolNotFoundError",
+        "ToolSpec",
+        "_json_type",
+        "_schema_from_fn",
+        "load_allowlist",
+        "default_allowlist_path",
+        "_resolved_tenant_or_none",
+        "ToolRegistry",
+        "default_registry",
+        "tool",
+        "__init__",
+        "register",
+        "names",
+        "get_schema",
+        "_assert_allowed",
+        "invoke",
+        "decorator"
+      ],
+      "last_modified": "2026-09-12T22:06:47Z",
+      "id": "runtime/tool_registry.py"
+    },
+    {
+      "node_type": "CodebaseFile",
+      "language": "python",
+      "symbols": [
+        "_splice",
+        "_redact_credit_cards",
+        "_hash8",
+        "_load_extra_patterns",
+        "_describe_extra_patterns",
+        "HITLBlobStore",
+        "_make_blob_ref",
+        "_writable_attributes",
+        "_string_parts",
+        "_rebuild",
+        "TraceRedactor",
+        "_sub",
+        "__init__",
+        "env_suffix",
+        "_key",
+        "put",
+        "_blob_path",
+        "get",
+        "_blob_store_for",
+        "on_start",
+        "on_end",
+        "shutdown",
+        "force_flush",
+        "_scrub",
+        "_truncate",
+        "configured"
+      ],
+      "last_modified": "2026-09-12T22:06:47Z",
+      "id": "runtime/trace_redactor.py"
+    },
+    {
+      "node_type": "CodebaseFile",
+      "language": "python",
+      "symbols": [
+        "CitationCheck",
+        "citations_grounded",
+        "outcomes_match",
+        "pair_parity",
+        "judge_independence_warning",
+        "warn_if_judge_not_independent",
+        "parity_violation",
+        "pair_score_spread"
+      ],
+      "last_modified": "2026-09-12T22:06:47Z",
+      "id": "runtime/judging.py"
+    },
+    {
+      "node_type": "CodebaseFile",
+      "language": "python",
+      "symbols": [
+        "CompletionResult",
+        "BudgetExceededError",
+        "_repo_root",
+        "_load_yaml",
+        "_active_profile_name",
+        "_roles_from_doc",
+        "degrade_chain",
+        "load_model_registry",
+        "_current_period",
+        "BudgetStatus",
+        "_BudgetBackend",
+        "_MemoryBudgetBackend",
+        "_RedisBudgetBackend",
+        "_PostgresBudgetBackend",
+        "_make_budget_backend",
+        "LLMGateway",
+        "remaining_usd",
+        "breached",
+        "get_spend",
+        "add_spend",
+        "try_reserve",
+        "__init__",
+        "_key",
+        "_connect",
+        "_period",
+        "_make_idempotency_store",
+        "get_budget_status",
+        "_degrade_chain",
+        "_is_free_tier",
+        "_is_provider_exhausted",
+        "_resolve_role",
+        "_report_run_status",
+        "_record_span_attributes",
+        "_emit_call_metrics",
+        "_stamp_llm_span",
+        "complete_stream",
+        "complete",
+        "_coerce_messages",
+        "_retry_reason",
+        "_on_retry",
+        "_is_retryable_provider_error",
+        "_unset_key_envs",
+        "_resolve_endpoint",
+        "_lookup_api_key",
+        "_invoke",
+        "_hook",
+        "_post_with_retry"
+      ],
+      "last_modified": "2026-09-12T22:06:47Z",
+      "id": "runtime/llm_gateway.py"
+    },
+    {
+      "node_type": "CodebaseFile",
+      "language": "python",
+      "symbols": [
+        "PromptGuardBlockedError",
+        "PromptGuardResult",
+        "_normalise",
+        "resolve_mode",
+        "is_enforcing",
+        "_denylist_path",
+        "_load_denylist",
+        "_control_char_ratio",
+        "scan_prompt",
+        "scan_messages",
+        "apply_prompt_guard",
+        "DocumentScanResult",
+        "_document_parts",
+        "scan_documents",
+        "__init__",
+        "blocked"
+      ],
+      "last_modified": "2026-09-12T22:06:47Z",
+      "id": "runtime/prompt_guard.py"
+    },
+    {
+      "node_type": "CodebaseFile",
+      "language": "python",
+      "symbols": [
+        "Embedder",
+        "_warn_if_fake_outside_development",
+        "HashEmbedder",
+        "SentenceTransformerEmbedder",
+        "make_embedder",
+        "embed",
+        "identity",
+        "__init__",
+        "_one",
+        "_load"
+      ],
+      "last_modified": "2026-09-12T22:06:47Z",
+      "id": "runtime/embeddings.py"
+    },
+    {
+      "node_type": "CodebaseFile",
+      "language": "python",
+      "symbols": [
+        "validate_tenant_id",
+        "_default_framework_version",
+        "tenant_yaml",
+        "_templates_dir",
+        "FrameworkRootError",
+        "looks_like_framework",
+        "init_tenant",
+        "_cmd_tenant_init",
+        "_cmd_doctor",
+        "_cmd_shellenv",
+        "_cmd_purge_idempotency",
+        "_cmd_version",
+        "build_parser",
+        "main"
+      ],
+      "last_modified": "2026-09-12T22:06:47Z",
+      "id": "runtime/cli.py"
+    },
+    {
+      "node_type": "CodebaseFile",
+      "language": "python",
+      "symbols": [
+        "TenantUnresolvedError",
+        "tenant_id_from_config",
+        "resolve_tenant_id",
+        "agent_context",
+        "current_identity",
+        "current_tenant_id"
+      ],
+      "last_modified": "2026-09-12T22:06:47Z",
+      "id": "runtime/tenancy.py"
+    },
+    {
+      "node_type": "CodebaseFile",
+      "language": "python",
+      "symbols": [
+        "content_text",
+        "system_prompt",
+        "system_fingerprint",
+        "prompt_attributes"
+      ],
+      "last_modified": "2026-09-12T22:06:47Z",
+      "id": "runtime/prompt_identity.py"
+    },
+    {
+      "node_type": "CodebaseFile",
+      "language": "python",
+      "symbols": [
+        "get_environment",
+        "env_choice",
+        "warn_once",
+        "warn_degraded_default"
+      ],
+      "last_modified": "2026-09-12T22:06:47Z",
+      "id": "runtime/environment.py"
+    },
+    {
+      "node_type": "CodebaseFile",
+      "language": "python",
+      "symbols": [
+        "luhn_valid"
+      ],
+      "last_modified": "2026-09-12T22:06:47Z",
+      "id": "runtime/luhn.py"
+    },
+    {
+      "node_type": "CodebaseFile",
+      "language": "python",
+      "symbols": [
+        "RecordedCall",
+        "FakeGateway",
+        "RecordingGateway",
+        "_as_text",
+        "complete",
+        "complete_stream",
+        "get_budget_status",
+        "calls_for",
+        "routes_used",
+        "assert_prompt_excludes",
+        "reset",
+        "_build_result",
+        "_resolve_text",
+        "__init__",
+        "degrade_tiers",
+        "__getattr__"
+      ],
+      "last_modified": "2026-09-12T22:06:47Z",
+      "id": "runtime/testing.py"
+    },
+    {
+      "node_type": "CodebaseFile",
+      "language": "python",
+      "symbols": [
+        "ascii_digits"
+      ],
+      "last_modified": "2026-09-12T22:06:47Z",
+      "id": "runtime/pii_patterns.py"
+    },
+    {
+      "node_type": "CodebaseFile",
+      "language": "python",
+      "symbols": [
+        "_notify",
+        "AlreadyResolvedError",
+        "DLQEntry",
+        "dead_letter_envelope",
+        "DeadLetterQueue",
+        "__init__",
+        "_migrate",
+        "_connect",
+        "_row_to_entry",
+        "enqueue",
+        "list",
+        "_get",
+        "replay",
+        "_release_claim",
+        "discard"
+      ],
+      "last_modified": "2026-09-12T22:06:47Z",
+      "id": "runtime/dead_letter.py"
+    },
+    {
+      "node_type": "CodebaseFile",
+      "language": "python",
+      "symbols": [
+        "make_temporal_replay_handler",
+        "handler",
+        "_signal"
+      ],
+      "last_modified": "2026-09-12T22:06:47Z",
+      "id": "runtime/temporal_replay.py"
+    },
+    {
+      "node_type": "CodebaseFile",
+      "language": "python",
+      "symbols": [
+        "infer_provider",
+        "resolve_api_format",
+        "build_request",
+        "parse_openai_completion",
+        "parse_anthropic_completion",
+        "parse_response",
+        "default_api_key_env",
+        "credential_env_for_model",
+        "is_provider_exhausted",
+        "is_model_gone",
+        "supports_streaming",
+        "parse_stream_delta",
+        "CloudProviderAdapter",
+        "_anthropic_temperature",
+        "_anthropic_messages_body",
+        "VertexAIAdapter",
+        "AzureOpenAIAdapter",
+        "BedrockAdapter",
+        "HuaweiModelArtsAdapter",
+        "is_cloud_provider",
+        "get_cloud_adapter",
+        "build_cloud_request",
+        "parse_cloud_response",
+        "_get_access_token"
+      ],
+      "last_modified": "2026-09-12T22:06:47Z",
+      "id": "runtime/provider_dispatch.py"
+    },
+    {
+      "node_type": "CodebaseFile",
+      "language": "python",
+      "symbols": [
+        "_encoder",
+        "_estimate_tokens",
+        "_count_tokens",
+        "ConversationMemory",
+        "__init__",
+        "messages",
+        "add",
+        "as_messages",
+        "token_count",
+        "clear",
+        "_evict",
+        "_message_tokens"
+      ],
+      "last_modified": "2026-09-12T22:06:47Z",
+      "id": "runtime/conversation_memory.py"
+    },
+    {
+      "node_type": "CodebaseFile",
+      "language": "typescript",
+      "symbols": [],
+      "last_modified": "2026-09-12T22:05:08Z",
+      "id": "src/App.tsx"
+    },
+    {
+      "node_type": "CodebaseFile",
+      "language": "typescript",
+      "symbols": [],
+      "last_modified": "2026-09-12T22:05:08Z",
+      "id": "src/main.tsx"
+    },
+    {
+      "node_type": "CodebaseFile",
+      "language": "typescript",
+      "symbols": [
+        "sum"
+      ],
+      "last_modified": "2026-09-12T22:06:06Z",
+      "id": "src/lib/sum.ts"
+    },
+    {
+      "node_type": "CodebaseFile",
+      "language": "typescript",
+      "symbols": [],
+      "last_modified": "2026-09-12T22:06:06Z",
+      "id": "src/lib/sum.test.ts"
+    },
+    {
+      "node_type": "CodebaseFile",
+      "language": "python",
+      "symbols": [
+        "_clear_warn_state",
+        "test_a_declared_but_empty_selector_means_unset",
+        "test_a_typo_still_raises",
+        "test_a_real_value_is_honoured_case_insensitively",
+        "test_the_budget_selector_no_longer_crashes_on_an_empty_var",
+        "test_the_in_process_spend_cap_is_an_error_in_production",
+        "test_the_in_process_vector_index_is_an_error_in_production",
+        "test_development_is_told_without_being_alarmed",
+        "test_each_degraded_default_is_announced_once",
+        "test_the_three_warnings_do_not_suppress_each_other",
+        "test_every_vector_alias_still_resolves",
+        "test_the_defaults_themselves_are_unchanged"
+      ],
+      "last_modified": "2026-09-12T22:06:47Z",
+      "id": "runtime/test/test_degraded_defaults.py"
+    },
+    {
+      "node_type": "CodebaseFile",
+      "language": "python",
+      "symbols": [
+        "test_the_catalog_is_not_empty",
+        "test_every_provider_resolves_its_key_from_the_shared_catalog",
+        "test_a_per_role_override_still_wins",
+        "test_an_override_that_is_unset_falls_back_rather_than_going_dark"
+      ],
+      "last_modified": "2026-09-12T22:06:47Z",
+      "id": "runtime/test/test_gateway_provider_catalog.py"
+    },
+    {
+      "node_type": "CodebaseFile",
+      "language": "python",
+      "symbols": [
+        "test_openai_shape_without_usage_reports_none",
+        "test_openai_shape_with_a_reported_zero_reports_zero",
+        "test_openai_shape_with_a_null_usage_block_reports_none",
+        "test_anthropic_shape_matches_its_sibling",
+        "test_parse_response_preserves_absence_for_every_route",
+        "test_cloud_adapters_preserve_absence_too",
+        "test_real_counts_still_come_through",
+        "test_the_direct_anthropic_route_sends_temperature",
+        "test_the_openai_route_still_does",
+        "test_every_cloud_anthropic_route_sends_temperature",
+        "test_a_temperature_above_the_anthropic_maximum_is_clamped_loudly"
+      ],
+      "last_modified": "2026-09-12T22:06:47Z",
+      "id": "runtime/test/test_provider_usage_reporting.py"
+    },
+    {
+      "node_type": "CodebaseFile",
+      "language": "python",
+      "symbols": [
+        "test_flat_shape_is_unchanged",
+        "test_profile_binds_roles_to_catalog_entries",
+        "test_id_defaults_to_the_catalog_key_but_an_explicit_id_wins",
+        "test_profile_selection_precedence",
+        "test_an_unknown_mode_falls_back_rather_than_resolving_nothing",
+        "test_a_binding_to_a_missing_catalog_entry_fails_loudly",
+        "test_api_format_defaults_from_provider",
+        "test_explicit_api_format_overrides_the_provider_default",
+        "test_claude_via_openrouter_uses_the_openai_envelope",
+        "test_direct_anthropic_still_uses_the_messages_envelope",
+        "test_null_content_parses_to_empty_string_not_none",
+        "test_anthropic_empty_content_block_parses_to_empty_string",
+        "test_pii_detection_tolerates_none"
+      ],
+      "last_modified": "2026-09-12T22:06:47Z",
+      "id": "runtime/test/test_registry_shapes.py"
+    },
+    {
+      "node_type": "CodebaseFile",
+      "language": "python",
+      "symbols": [
+        "test_the_digest_is_of_the_system_turn",
+        "test_the_digest_is_stable_across_different_user_turns",
+        "test_the_digest_changes_when_the_system_prompt_is_edited",
+        "test_no_system_turn_is_none_not_the_hash_of_nothing",
+        "test_multipart_content_hashes_the_same_as_the_plain_string",
+        "test_several_system_turns_are_one_prompt",
+        "test_attributes_never_carry_the_prompt_text",
+        "test_absent_facts_are_absent_keys",
+        "test_the_gateway_puts_the_digest_on_the_span"
+      ],
+      "last_modified": "2026-09-12T22:06:47Z",
+      "id": "runtime/test/test_prompt_identity.py"
+    },
+    {
+      "node_type": "CodebaseFile",
+      "language": "python",
+      "symbols": [
+        "test_valid_cards_pass",
+        "test_invalid_candidates_fail",
+        "test_guard_and_redactor_share_one_implementation",
+        "test_guard_and_redactor_agree_end_to_end"
+      ],
+      "last_modified": "2026-09-12T22:06:47Z",
+      "id": "runtime/test/test_luhn_parity.py"
+    },
+    {
+      "node_type": "CodebaseFile",
+      "language": "python",
+      "symbols": [
+        "_make_gateway",
+        "test_the_memory_backend_resets_at_a_month_boundary",
+        "test_the_memory_backend_keeps_tenants_apart",
+        "test_concurrent_calls_cannot_exceed_cap",
+        "test_reservation_releases_on_invoke_failure",
+        "test_free_tier_model_bypasses_reservation",
+        "test_reservation_reconciles_to_actual_cost",
+        "test_unreported_usage_bills_the_reservation_not_zero",
+        "test_a_genuine_zero_is_still_a_zero",
+        "test_invoke_retries_transient_errors_with_backoff",
+        "test_invoke_does_not_retry_non_transient_errors",
+        "test_invoke_groq_provider_uses_groq_base_url_and_key",
+        "fake_invoke",
+        "run_one",
+        "failing_invoke",
+        "fake_post",
+        "fake_post_401"
+      ],
+      "last_modified": "2026-09-12T22:06:47Z",
+      "id": "runtime/test/test_llm_gateway_budget.py"
+    },
+    {
+      "node_type": "CodebaseFile",
+      "language": "python",
+      "symbols": [
+        "_exporter",
+        "spans",
+        "identity_processor"
+      ],
+      "last_modified": "2026-09-12T22:06:47Z",
+      "id": "runtime/test/conftest.py"
+    },
+    {
+      "node_type": "CodebaseFile",
+      "language": "python",
+      "symbols": [
+        "gateway",
+        "test_reason_is_a_class_not_a_message",
+        "_State",
+        "test_a_retry_adds_an_event_to_the_active_span",
+        "test_the_full_message_is_on_the_event_not_the_metric",
+        "test_the_hook_never_raises_without_a_span",
+        "test_the_hook_survives_an_outcome_with_no_exception",
+        "test_attempts_are_recorded_after_a_real_retry",
+        "test_a_call_that_did_not_retry_still_says_so",
+        "__init__",
+        "_FlakyClient",
+        "_Client",
+        "__aenter__",
+        "__aexit__",
+        "post"
+      ],
+      "last_modified": "2026-09-12T22:06:47Z",
+      "id": "runtime/test/test_retry_visibility.py"
+    },
+    {
+      "node_type": "CodebaseFile",
+      "language": "python",
+      "symbols": [
+        "test_a_poisoned_document_is_quarantined",
+        "test_a_benign_document_passes_through",
+        "test_only_the_poisoned_document_is_dropped",
+        "test_an_inline_role_marker_is_caught",
+        "test_ordinary_prose_mentioning_system_is_not_quarantined",
+        "test_it_accepts_vector_hits_mappings_and_strings",
+        "test_detection_is_the_same_engine_as_direct_prompts",
+        "test_it_quarantines_a_poisoned_document_retrieved_from_a_real_store"
+      ],
+      "last_modified": "2026-09-12T22:06:47Z",
+      "id": "runtime/test/test_rag_poison_guard.py"
+    },
+    {
+      "node_type": "CodebaseFile",
+      "language": "python",
+      "symbols": [
+        "_registries",
+        "test_there_is_a_registry_to_check",
+        "test_a_decommissioned_entry_is_actually_marked",
+        "test_no_profile_binds_a_decommissioned_model"
+      ],
+      "last_modified": "2026-09-12T22:06:47Z",
+      "id": "runtime/test/test_no_role_binds_a_dead_model.py"
+    },
+    {
+      "node_type": "CodebaseFile",
+      "language": "python",
+      "symbols": [
+        "FakeCursor",
+        "FakeConnection",
+        "FakePoolError",
+        "FakePool",
+        "fake_psycopg2",
+        "_the_pool",
+        "test_connections_are_reused_across_borrow_cycles",
+        "test_close_releases_instead_of_closing",
+        "test_stale_pooled_connection_is_discarded_and_replaced",
+        "test_pool_exhaustion_falls_back_to_direct_connect",
+        "test_budget_backend_reuses_pooled_connection",
+        "__init__",
+        "execute",
+        "fetchone",
+        "rowcount",
+        "__enter__",
+        "__exit__",
+        "cursor",
+        "rollback",
+        "close",
+        "getconn",
+        "putconn",
+        "closeall",
+        "_direct_connect"
+      ],
+      "last_modified": "2026-09-12T22:06:47Z",
+      "id": "runtime/test/test_pg_pool.py"
+    },
+    {
+      "node_type": "CodebaseFile",
+      "language": "python",
+      "symbols": [
+        "_fresh_cache",
+        "test_a_checkout_is_marked_as_one",
+        "test_source_builds_are_identifiable_without_parsing",
+        "test_the_checkout_version_matches_pyproject",
+        "test_an_installed_package_reports_its_release_version_bare",
+        "test_unresolvable_is_named_not_guessed",
+        "test_every_span_carries_the_framework_version",
+        "test_the_ingest_payload_carries_the_version",
+        "test_the_portal_column_is_nullable_and_added_by_an_alter",
+        "test_the_two_sides_agree_on_the_field_name",
+        "test_a_pinned_tenant_would_send_none_of_this",
+        "test_the_version_is_json_serialisable_for_the_post",
+        "_tenant_root",
+        "test_anything_inside_the_declared_major_is_silent",
+        "test_a_source_checkout_inside_the_major_is_silent",
+        "test_crossing_up_a_major_warns_and_points_at_the_matrix",
+        "test_running_an_older_major_than_declared_warns_differently",
+        "test_it_warns_once_per_process",
+        "test_no_declaration_is_silent",
+        "test_an_unreadable_declaration_is_reported_not_ignored",
+        "test_an_unknown_running_version_is_reported",
+        "test_it_never_raises",
+        "test_every_worker_entrypoint_runs_the_check"
+      ],
+      "last_modified": "2026-09-12T22:06:47Z",
+      "id": "runtime/test/test_framework_version.py"
+    },
+    {
+      "node_type": "CodebaseFile",
+      "language": "python",
+      "symbols": [
+        "test_agent_span_noops_without_a_tracer",
+        "test_record_tool_call_noops_without_a_tracer",
+        "test_agent_span_reraises_but_still_noops",
+        "test_tool_registry_invoke_unchanged_without_tracer",
+        "_attrs",
+        "test_agent_span_records_attributes_and_duration",
+        "test_agent_span_stamps_error_and_reraises",
+        "test_each_tool_call_gets_its_own_child_span",
+        "test_denied_tool_records_allowed_false",
+        "test_tool_call_outside_a_step_emits_no_lone_span",
+        "adder",
+        "sanctions",
+        "registry_lookup",
+        "wire_transfer",
+        "solo"
+      ],
+      "last_modified": "2026-09-12T22:06:47Z",
+      "id": "runtime/test/test_tracing.py"
+    },
+    {
+      "node_type": "CodebaseFile",
+      "language": "python",
+      "symbols": [
+        "_reader",
+        "collected",
+        "_points",
+        "test_a_call_increments_a_counter_with_an_outcome",
+        "test_the_cache_ratio_is_computable_at_all",
+        "test_unreported_tokens_are_not_recorded_as_zero",
+        "test_attributes_stay_low_cardinality",
+        "test_retrieval_is_measured_too",
+        "test_everything_no_ops_without_a_meter_provider",
+        "test_a_broken_instrument_never_raises",
+        "test_a_retry_is_counted_with_a_bounded_reason",
+        "Exploding",
+        "add",
+        "record"
+      ],
+      "last_modified": "2026-09-12T22:06:47Z",
+      "id": "runtime/test/test_metrics.py"
+    },
+    {
+      "node_type": "CodebaseFile",
+      "language": "python",
+      "symbols": [
+        "Colour",
+        "_key_in_subprocess",
+        "test_the_key_is_the_same_in_another_process",
+        "test_a_payload_with_no_stable_form_is_refused_loudly",
+        "test_the_refusal_says_what_to_do_about_it",
+        "test_set_ordering_does_not_change_the_key",
+        "test_different_members_still_change_the_key",
+        "test_a_set_collides_with_its_sorted_list_and_that_is_known",
+        "test_json_payloads_hash_exactly_as_they_did_before",
+        "Ctx"
+      ],
+      "last_modified": "2026-09-12T22:06:47Z",
+      "id": "runtime/test/test_idempotency_key.py"
+    },
+    {
+      "node_type": "CodebaseFile",
+      "language": "python",
+      "symbols": [
+        "_sources",
+        "_strip_comments",
+        "test_no_store_opens_a_raw_connection",
+        "test_pooled_connections_are_released_not_context_managed",
+        "test_pool_docstring_lists_every_postgres_store",
+        "test_ensure_schema_runs_once_per_dsn_and_key",
+        "test_ensure_schema_applies_a_statement_list_in_order",
+        "_Cur",
+        "_Conn",
+        "execute",
+        "__enter__",
+        "__exit__",
+        "cursor",
+        "close"
+      ],
+      "last_modified": "2026-09-12T22:06:47Z",
+      "id": "runtime/test/test_pg_pool_coverage.py"
+    },
+    {
+      "node_type": "CodebaseFile",
+      "language": "python",
+      "symbols": [
+        "_identity_processor",
+        "_all_spans",
+        "test_every_span_in_a_bound_context_carries_identity",
+        "test_identity_is_not_threaded_by_hand",
+        "test_one_worker_many_roles_keeps_them_distinct",
+        "test_context_does_not_leak_between_activities",
+        "test_an_unbound_span_is_unattributed_not_mislabelled",
+        "test_resource_carries_the_per_process_half",
+        "test_owner_is_omitted_rather_than_guessed"
+      ],
+      "last_modified": "2026-09-12T22:06:47Z",
+      "id": "runtime/test/test_pillar3_conformance.py"
+    },
+    {
+      "node_type": "CodebaseFile",
+      "language": "python",
+      "symbols": [
+        "test_blocks_ignore_previous_instructions",
+        "test_allows_benign_prompt",
+        "test_blocks_system_role_injection",
+        "test_tenant_denylist",
+        "test_resolve_mode_defaults_to_default",
+        "test_strict_mode_raises_on_block",
+        "_blocked",
+        "test_a_zero_width_character_inside_a_word_does_not_hide_it",
+        "test_a_homoglyph_does_not_hide_it",
+        "test_fullwidth_latin_does_not_hide_it",
+        "test_separators_other_than_whitespace_do_not_hide_it",
+        "test_ordinary_hyphenated_prose_is_not_blocked",
+        "test_the_control_char_ratio_still_reads_the_original_text",
+        "test_zero_width_joiners_are_not_treated_as_padding",
+        "test_a_bidi_override_payload_is_flagged"
+      ],
+      "last_modified": "2026-09-12T22:06:47Z",
+      "id": "runtime/test/test_prompt_guard.py"
+    },
+    {
+      "node_type": "CodebaseFile",
+      "language": "python",
+      "symbols": [
+        "_gw",
+        "test_no_degrade_while_budget_is_healthy",
+        "test_breach_walks_past_the_paid_rung_to_the_free_tier",
+        "test_breach_from_the_middle_rung_also_reaches_free",
+        "test_free_tier_caller_is_never_blocked_by_a_breach",
+        "test_chain_without_any_free_tier_falls_back_to_next_paid_rung",
+        "test_no_cheaper_tier_halts_with_alert",
+        "test_broken_chain_link_is_skipped_not_fatal",
+        "test_cycle_in_degrade_chain_terminates",
+        "test_a_chain_with_no_configured_tier_refuses_rather_than_returning_nothing"
+      ],
+      "last_modified": "2026-09-12T22:06:47Z",
+      "id": "runtime/test/test_degrade_ladder.py"
+    },
+    {
+      "node_type": "CodebaseFile",
+      "language": "python",
+      "symbols": [
+        "crm_update_activity",
+        "CRMWorkflow",
+        "__init__",
+        "run"
+      ],
+      "last_modified": "2026-09-12T22:06:47Z",
+      "id": "runtime/test/_recoverable_step_fixtures.py"
+    },
+    {
+      "node_type": "CodebaseFile",
+      "language": "python",
+      "symbols": [
+        "test_all_citations_resolve",
+        "test_unresolved_citation_flagged",
+        "test_empty_citations_flagged_by_default",
+        "test_empty_citations_allowed_when_opted_out",
+        "test_pair_parity_matches_and_mismatches",
+        "test_pair_parity_omits_singletons_and_unpaired",
+        "test_pair_parity_omits_a_pair_no_one_scored",
+        "test_pair_parity_omits_a_pair_with_one_unscored_member",
+        "test_pair_parity_compares_every_member_not_just_the_first_two",
+        "test_pair_parity_still_passes_a_matching_triple",
+        "test_pair_parity_custom_outcome_key",
+        "test_parity_violation_none_when_equal",
+        "test_parity_violation_reports_the_divergence",
+        "test_independence_warning_when_same_model",
+        "test_no_warning_when_models_differ",
+        "test_no_warning_when_either_unset",
+        "test_warn_helper_logs_only_when_not_independent",
+        "test_run_evals_delegates_to_the_shared_function"
+      ],
+      "last_modified": "2026-09-12T22:06:47Z",
+      "id": "runtime/test/test_judging.py"
+    },
+    {
+      "node_type": "CodebaseFile",
+      "language": "python",
+      "symbols": [
+        "_FakeStreamResp",
+        "test_supports_streaming_matrix",
+        "test_parse_stream_delta_anthropic_only_returns_text_events",
+        "test_parse_stream_delta_ignores_tool_use_json_deltas",
+        "test_parse_stream_delta_openai_compatible",
+        "_gateway",
+        "test_anthropic_streams_and_measures_ttft",
+        "test_streaming_provider_exhaustion_falls_back_to_complete",
+        "test_cloud_provider_falls_back_to_complete_instead_of_raising",
+        "test_endpoint_resolution_shared_with_invoke",
+        "test_api_key_env_override_and_fallback",
+        "__init__",
+        "is_success",
+        "__aenter__",
+        "__aexit__",
+        "raise_for_status",
+        "aread",
+        "json",
+        "text",
+        "aiter_lines",
+        "_stream",
+        "_ErrorResp"
+      ],
+      "last_modified": "2026-09-12T22:06:47Z",
+      "id": "runtime/test/test_stream_providers.py"
+    },
+    {
+      "node_type": "CodebaseFile",
+      "language": "python",
+      "symbols": [
+        "test_the_old_check_saw_nothing",
+        "test_the_score_divergence_is_visible",
+        "test_a_clean_run_reports_no_spread",
+        "test_a_missing_score_is_not_read_as_zero",
+        "test_rows_without_a_pair_are_ignored",
+        "test_more_than_two_members_uses_the_full_range"
+      ],
+      "last_modified": "2026-09-12T22:06:47Z",
+      "id": "runtime/test/test_pair_score_spread.py"
+    },
+    {
+      "node_type": "CodebaseFile",
+      "language": "python",
+      "symbols": [
+        "test_register_and_invoke_tool",
+        "test_allowlist_permits_listed_tool",
+        "test_allowlist_denies_unlisted_tool_in_strict",
+        "test_load_allowlist_reads_template",
+        "_fresh_default_registry",
+        "test_the_default_registry_honours_a_declared_strict_allowlist",
+        "test_the_default_registry_is_reachable_at_all",
+        "test_importing_the_module_builds_no_registry",
+        "add",
+        "echo",
+        "secret_tool",
+        "unlisted_by_default",
+        "greet"
+      ],
+      "last_modified": "2026-09-12T22:06:47Z",
+      "id": "runtime/test/test_tool_registry.py"
+    },
+    {
+      "node_type": "CodebaseFile",
+      "language": "python",
+      "symbols": [
+        "_gateway",
+        "test_resolve_mode",
+        "test_secure_by_default_when_unset",
+        "test_is_enforcing_matrix",
+        "test_warn_reports_without_raising",
+        "test_strict_raises_inside_the_library",
+        "test_off_never_flags",
+        "test_gateway_blocks_in_enforcing_modes",
+        "test_gateway_warn_mode_proceeds_and_reports",
+        "test_clean_prompt_reports_nothing",
+        "test_upgrade_does_not_silently_stop_blocking"
+      ],
+      "last_modified": "2026-09-12T22:06:47Z",
+      "id": "runtime/test/test_prompt_guard_modes.py"
+    },
+    {
+      "node_type": "CodebaseFile",
+      "language": "python",
+      "symbols": [
+        "test_is_cloud_provider",
+        "test_unknown_cloud_provider_raises",
+        "test_vertex_ai_anthropic_publisher",
+        "test_vertex_ai_default_publisher_is_gemini",
+        "test_vertex_ai_gemini_publisher",
+        "test_azure_openai",
+        "test_bedrock",
+        "test_vertex_ai_default_region_is_verified_working_region",
+        "test_vertex_ai_project_supports_env_var_expansion",
+        "test_bedrock_default_region_is_us_east_1",
+        "test_vertex_ai_url_template_override",
+        "test_bedrock_url_template_override",
+        "test_huawei_modelarts_path_template_override",
+        "test_huawei_modelarts",
+        "test_a_null_openai_style_completion_yields_empty_text",
+        "test_a_missing_content_key_yields_empty_text",
+        "test_an_empty_anthropic_style_content_array_yields_empty_text",
+        "test_every_cloud_adapter_delegates_to_a_shared_parser"
+      ],
+      "last_modified": "2026-09-12T22:06:47Z",
+      "id": "runtime/test/test_provider_dispatch_cloud.py"
+    },
+    {
+      "node_type": "CodebaseFile",
+      "language": "python",
+      "symbols": [
+        "_FakeWorkflowModule",
+        "fake_workflow",
+        "_gate",
+        "test_supplied_gate_result_does_not_re_run_any_gate_activity",
+        "test_high_risk_gate_result_waits_for_approval_before_resuming",
+        "test_rejection_never_runs_the_high_impact_action",
+        "test_gate_result_without_hitl_resumes_directly",
+        "test_gate_activity_name_still_runs_the_gate",
+        "test_rejects_both_gate_activity_and_gate_result",
+        "test_rejects_neither_gate_activity_nor_gate_result",
+        "test_timeout_with_tenant_id_emits_the_generic_dlq_envelope",
+        "test_timeout_without_tenant_id_keeps_the_legacy_flattened_shape",
+        "test_an_approval_does_not_carry_over_to_the_next_gate",
+        "test_a_rejection_does_not_carry_over_either",
+        "test_an_addressed_approval_answers_only_its_own_gate",
+        "test_no_workflow_waits_on_the_approval_field_directly",
+        "__init__",
+        "execute_activity",
+        "wait_condition",
+        "info",
+        "signal",
+        "_install",
+        "_Info"
+      ],
+      "last_modified": "2026-09-12T22:06:47Z",
+      "id": "runtime/test/test_hitl_gate.py"
+    },
+    {
+      "node_type": "CodebaseFile",
+      "language": "python",
+      "symbols": [
+        "fake_gateway"
+      ],
+      "last_modified": "2026-09-12T22:06:47Z",
+      "id": "runtime/test/_gateway_fixtures.py"
+    },
+    {
+      "node_type": "CodebaseFile",
+      "language": "python",
+      "symbols": [
+        "FakeSpanContext",
+        "FakeSpan",
+        "_redactor",
+        "test_staging_profile_hashes_secrets_preserving_structure",
+        "test_production_profile_truncates_and_flattens",
+        "test_development_profile_does_not_scrub",
+        "test_unrecognized_profile_value_falls_back_to_strictest",
+        "test_per_span_tenant_id_used_for_hitl_blob_not_constructor_default",
+        "test_blob_ref_includes_span_id_for_collision_safety",
+        "test_missing_hitl_key_logs_error_not_silently_swallowed",
+        "test_credit_card_redaction_validates_luhn",
+        "test_get_environment_fail_closed_for_unrecognized_value",
+        "test_get_environment_fail_closed_for_unset",
+        "test_get_environment_explicit_development",
+        "_isolated_provider",
+        "test_real_span_is_scrubbed_end_to_end",
+        "test_ending_a_span_with_the_redactor_installed_does_not_raise",
+        "test_development_profile_leaves_a_real_span_alone",
+        "_export_with_profile",
+        "test_a_sequence_attribute_is_scrubbed_like_a_string_one",
+        "test_a_card_number_in_a_sequence_is_redacted",
+        "test_the_sequence_keeps_its_shape_and_length",
+        "test_non_string_attributes_are_left_alone",
+        "test_production_does_not_truncate_a_digest",
+        "test_production_still_truncates_ordinary_free_text",
+        "test_the_redactor_scrubs_the_identifiers_the_input_guard_does",
+        "test_the_redactor_handles_arabic_numerals_too",
+        "test_one_identifier_written_two_ways_hashes_the_same",
+        "test_a_plain_number_is_left_alone",
+        "_fallback_tenant",
+        "test_fallback_tenant_reads_the_primary_env_var",
+        "test_a_set_but_empty_tenant_var_falls_back_to_unknown",
+        "test_an_unresolvable_tenant_never_takes_down_the_processor",
+        "_key_for",
+        "_sha",
+        "test_the_per_tenant_key_variable_is_a_legal_name",
+        "test_a_hyphenated_tenant_gets_its_own_key",
+        "test_an_unpunctuated_tenant_keeps_the_name_it_already_had",
+        "test_falling_back_to_the_fleet_key_is_reported",
+        "test_the_key_value_is_hashed_verbatim",
+        "test_a_whitespace_only_key_counts_as_unset",
+        "test_the_missing_key_error_names_the_settable_variable",
+        "_stored_payload",
+        "test_the_blob_round_trips_to_the_original_payload",
+        "test_the_blob_keeps_what_the_span_had_to_lose",
+        "test_a_missing_ref_is_none_not_an_error",
+        "test_the_wrong_key_raises_instead_of_returning_nonsense",
+        "test_one_tenants_key_does_not_open_anothers_blob",
+        "test_get_refuses_rather_than_guessing_when_s3_is_configured",
+        "__init__"
+      ],
+      "last_modified": "2026-09-12T22:06:47Z",
+      "id": "runtime/test/test_trace_redactor.py"
+    },
+    {
+      "node_type": "CodebaseFile",
+      "language": "python",
+      "symbols": [
+        "payloads_on",
+        "_tool_span",
+        "test_payloads_are_off_unless_declared",
+        "test_the_env_var_and_the_declaration_both_enable_it",
+        "test_the_attribute_names_are_the_ones_the_redactor_scrubs",
+        "test_the_redactor_actually_scrubs_a_tool_payload",
+        "test_a_huge_payload_is_capped_before_the_redactor_sees_it",
+        "test_an_unserialisable_payload_is_omitted_not_stringified_as_an_error",
+        "test_non_json_objects_fall_back_to_str",
+        "test_the_registry_records_arguments_and_result",
+        "test_arguments_are_recorded_when_the_tool_raises",
+        "Hostile",
+        "Point",
+        "add",
+        "explode",
+        "__repr__"
+      ],
+      "last_modified": "2026-09-12T22:06:47Z",
+      "id": "runtime/test/test_tool_payloads.py"
+    },
+    {
+      "node_type": "CodebaseFile",
+      "language": "python",
+      "symbols": [
+        "_reset_moderation",
+        "test_no_hook_optional_allows_text",
+        "test_required_mode_without_hook_raises",
+        "test_registered_hook_blocks",
+        "test_registered_hook_raise_on_block",
+        "test_llm_gateway_reexports_register",
+        "classifier"
+      ],
+      "last_modified": "2026-09-12T22:06:47Z",
+      "id": "runtime/test/test_moderation.py"
+    },
+    {
+      "node_type": "CodebaseFile",
+      "language": "python",
+      "symbols": [
+        "Demo",
+        "test_parse_fenced_json",
+        "test_parse_bare_json",
+        "test_parse_fenced_without_language_tag",
+        "test_invalid_schema_raises",
+        "test_malformed_json_raises",
+        "Row",
+        "Rows",
+        "test_a_bare_json_array_is_parsed",
+        "test_a_bare_array_and_a_fenced_one_agree",
+        "test_the_answer_fence_wins_over_an_earlier_working_fence",
+        "test_a_non_json_language_tag_does_not_hijack_extraction",
+        "test_an_explicit_json_tag_outranks_an_earlier_untagged_fence",
+        "test_a_failure_names_the_block_it_tried",
+        "test_the_error_does_not_quote_the_model_output",
+        "test_an_empty_fence_is_not_blamed_for_a_later_failure",
+        "test_a_truncated_first_fence_falls_through_to_the_next",
+        "test_a_prose_fence_falls_through_to_bare_json"
+      ],
+      "last_modified": "2026-09-12T22:06:47Z",
+      "id": "runtime/test/test_structured_output.py"
+    },
+    {
+      "node_type": "CodebaseFile",
+      "language": "python",
+      "symbols": [
+        "FakeWorkflow",
+        "test_run_with_self_correction_retries_corrected_payload",
+        "test_run_with_self_correction_falls_back_to_recoverable_step_with_last_payload",
+        "test_a_failing_correction_activity_falls_through_to_the_human_path",
+        "__init__",
+        "execute_activity",
+        "fallback",
+        "_Fake",
+        "_recoverable",
+        "info",
+        "signal",
+        "_I"
+      ],
+      "last_modified": "2026-09-12T22:06:47Z",
+      "id": "runtime/test/test_self_correction_workflow.py"
+    },
+    {
+      "node_type": "CodebaseFile",
+      "language": "python",
+      "symbols": [
+        "_gateway",
+        "test_complete_returns_scrub_counts",
+        "test_clean_prompt_reports_no_redactions",
+        "test_guardrail_off_reports_nothing",
+        "test_result_defaults_are_independent_instances"
+      ],
+      "last_modified": "2026-09-12T22:06:47Z",
+      "id": "runtime/test/test_guardrail_evidence.py"
+    },
+    {
+      "node_type": "CodebaseFile",
+      "language": "python",
+      "symbols": [
+        "test_every_documented_spelling_enables_tls",
+        "test_anything_else_leaves_tls_off",
+        "test_tls_defaults_off_when_unset",
+        "test_a_missing_address_falls_back_rather_than_raising",
+        "test_no_caller_builds_its_own_temporal_connection"
+      ],
+      "last_modified": "2026-09-12T22:06:47Z",
+      "id": "runtime/test/test_temporal_client.py"
+    },
+    {
+      "node_type": "CodebaseFile",
+      "language": "python",
+      "symbols": [
+        "_FakeStreamResp",
+        "test_complete_stream_sets_ttft_ms",
+        "_stream_gateway",
+        "test_complete_stream_keeps_budget_reservation_on_success",
+        "__init__",
+        "is_success",
+        "__aenter__",
+        "__aexit__",
+        "raise_for_status",
+        "aread",
+        "json",
+        "text",
+        "aiter_lines"
+      ],
+      "last_modified": "2026-09-12T22:06:47Z",
+      "id": "runtime/test/test_ttft_stream.py"
+    },
+    {
+      "node_type": "CodebaseFile",
+      "language": "python",
+      "symbols": [
+        "test_nothing_configured_is_none_not_a_localhost_guess",
+        "test_a_base_url_gains_the_signal_path",
+        "test_a_url_that_already_names_the_path_is_not_doubled",
+        "test_a_base_naming_another_signal_does_not_stack_paths",
+        "test_the_per_signal_variable_is_used_verbatim",
+        "test_precedence_base_over_framework_name",
+        "test_the_framework_name_still_works_alone",
+        "test_an_unknown_signal_is_refused",
+        "_portal_resolver_source",
+        "test_the_portal_resolver_reads_the_same_variables_in_the_same_order",
+        "test_the_portal_resolver_still_guards_the_doubled_suffix",
+        "test_no_module_hand_rolls_the_signal_path_any_more"
+      ],
+      "last_modified": "2026-09-12T22:06:47Z",
+      "id": "runtime/test/test_otlp_endpoint.py"
+    },
+    {
+      "node_type": "CodebaseFile",
+      "language": "python",
+      "symbols": [
+        "test_conversation_memory_evicts_oldest_when_over_budget",
+        "test_conversation_memory_as_messages_preserves_order",
+        "test_hash_embedder_is_deterministic_and_fixed_dim",
+        "test_make_embedder_defaults_to_hash_when_embedder_hash",
+        "test_memory_vector_store_add_and_query_returns_nearest",
+        "test_make_vector_store_defaults_to_memory",
+        "_fill",
+        "test_the_system_prompt_survives_eviction",
+        "test_eviction_still_happens_around_the_protected_message",
+        "test_multiple_system_messages_are_all_kept",
+        "test_a_budget_too_small_for_its_system_prompt_warns",
+        "test_the_estimate_is_not_systematically_low_on_non_latin_text",
+        "test_the_fallback_says_once_that_it_is_estimating",
+        "test_the_default_embedder_is_still_the_fake",
+        "test_using_the_fake_outside_development_is_an_error_level_event",
+        "test_development_gets_the_same_message_without_the_alarm",
+        "test_the_fake_warning_is_said_once",
+        "test_embedders_report_an_identity_that_distinguishes_them",
+        "test_a_retrieval_span_names_the_embedder",
+        "test_a_real_store_puts_the_embedder_on_its_span",
+        "test_an_embedder_without_an_identity_still_works",
+        "_Span",
+        "LegacyEmbedder",
+        "set_attribute",
+        "__enter__",
+        "__exit__",
+        "embed"
+      ],
+      "last_modified": "2026-09-12T22:06:47Z",
+      "id": "runtime/test/test_memory_and_vector.py"
+    },
+    {
+      "node_type": "CodebaseFile",
+      "language": "python",
+      "symbols": [
+        "_in_subprocess",
+        "test_configure_telemetry_installs_a_real_meter_provider",
+        "test_the_gateways_instruments_are_not_proxies_after_configure",
+        "test_without_configuration_they_are_proxies",
+        "test_tracing_is_still_installed_by_the_same_call",
+        "test_every_worker_entrypoint_configures_telemetry",
+        "test_env_is_loaded_before_telemetry_reads_it"
+      ],
+      "last_modified": "2026-09-12T22:06:47Z",
+      "id": "runtime/test/test_telemetry_wiring.py"
+    },
+    {
+      "node_type": "CodebaseFile",
+      "language": "python",
+      "symbols": [
+        "test_returns_real_completion_result_shape",
+        "test_scripted_sequence_then_sticky_last",
+        "test_callable_response_sees_the_prompt",
+        "test_streaming_reports_ttft_and_records_the_call",
+        "test_double_is_not_more_capable_than_the_real_gateway",
+        "test_budget_cap_raises_the_real_error_type",
+        "test_assertion_helpers",
+        "test_message_list_prompts_are_flattened_for_assertions",
+        "test_recording_gateway_wraps_and_delegates"
+      ],
+      "last_modified": "2026-09-12T22:06:47Z",
+      "id": "runtime/test/test_testing_doubles.py"
+    },
+    {
+      "node_type": "CodebaseFile",
+      "language": "python",
+      "symbols": [
+        "test_every_prompt_shape_converts_without_raising",
+        "test_the_double_accepts_a_multimodal_prompt_end_to_end",
+        "test_recorded_prompts_stay_assertable",
+        "test_the_two_converters_are_one_function"
+      ],
+      "last_modified": "2026-09-12T22:06:47Z",
+      "id": "runtime/test/test_testing_double_parity.py"
+    },
+    {
+      "node_type": "CodebaseFile",
+      "language": "python",
+      "symbols": [
+        "test_envelope_keys_match_what_enqueue_accepts",
+        "test_the_legacy_flattened_shape_is_rejected_by_name",
+        "test_every_producer_builds_the_envelope_through_the_builder",
+        "test_envelope_defaults_the_optional_fields_rather_than_omitting_them",
+        "test_the_task_id_is_stable_across_deliveries_of_one_enqueue",
+        "test_a_reset_or_retried_run_does_not_collide_with_the_previous_one",
+        "test_each_attempt_and_each_gate_files_separately"
+      ],
+      "last_modified": "2026-09-12T22:06:47Z",
+      "id": "runtime/test/test_dead_letter.py"
+    },
+    {
+      "node_type": "CodebaseFile",
+      "language": "python",
+      "symbols": [
+        "_isolate_module_state",
+        "repo",
+        "test_loads_env_file",
+        "test_the_mirror_never_overwrites_the_environment",
+        "test_absent_env_file_is_not_an_error",
+        "test_parses_quotes_comments_and_export",
+        "test_dotted_lookup",
+        "test_dotenv_outranks_the_ambient_shell",
+        "test_a_declaration_outranks_the_ambient_shell",
+        "test_an_ignored_ambient_value_is_reported_not_swallowed",
+        "test_explicit_still_beats_everything",
+        "test_an_undeclared_key_still_comes_from_the_environment",
+        "test_env_overrides_restores_ambient_precedence",
+        "test_the_regression_a_declared_cap_beats_the_code_default",
+        "test_falls_back_to_the_default_when_nothing_declares_it",
+        "test_no_default_means_raise_not_invent",
+        "test_a_malformed_value_raises_rather_than_falling_through",
+        "test_a_blank_override_is_not_an_override",
+        "test_posture_is_readable_from_the_declaration",
+        "test_a_declared_posture_is_not_overridden_by_an_ambient_export",
+        "test_a_declared_false_flag_is_honoured_not_treated_as_absent",
+        "test_yaml_bare_off_would_have_been_a_boolean",
+        "test_as_bool_reads_both_channels",
+        "test_the_enforced_budget_key_is_the_one_the_portal_reports",
+        "test_override_is_the_deliberate_channel_the_strict_rule_leaves_room_for",
+        "test_overrides_nest_and_restore",
+        "test_one_root_finder_and_a_tenant_beats_its_parent_repo",
+        "test_one_truthy_catalog_across_the_runtime",
+        "_build"
+      ],
+      "last_modified": "2026-09-12T22:06:47Z",
+      "id": "runtime/test/test_config.py"
+    },
+    {
+      "node_type": "CodebaseFile",
+      "language": "python",
+      "symbols": [
+        "_reset_guardrail_state",
+        "test_default_scrub_masks_emirates_id",
+        "test_default_scrub_masks_email_and_phone",
+        "test_off_mode_leaves_text_unchanged",
+        "test_scrub_messages_rewrites_content_strings",
+        "test_custom_callback_replaces_default",
+        "test_resolve_mode_defaults_off_in_development",
+        "test_resolve_mode_defaults_default_in_production",
+        "test_resolve_mode_respects_explicit_off",
+        "test_detect_pii_counts_without_rewriting",
+        "test_detect_pii_agrees_with_scrub_text",
+        "test_detect_pii_rejects_long_non_luhn_digit_runs",
+        "test_detect_pii_ignores_guardrail_mode",
+        "_arabic",
+        "test_an_emirates_id_in_arabic_numerals_is_scrubbed",
+        "test_the_bare_15_digit_form_too",
+        "test_a_card_in_arabic_numerals_still_luhn_checks",
+        "test_the_scrubbed_text_keeps_the_users_own_characters",
+        "custom"
+      ],
+      "last_modified": "2026-09-12T22:06:47Z",
+      "id": "runtime/test/test_input_guardrail.py"
+    },
+    {
+      "node_type": "CodebaseFile",
+      "language": "python",
+      "symbols": [
+        "scaffold",
+        "_no_ambient_tenant",
+        "test_reads_the_declaration_nothing_had_read",
+        "test_precedence_explicit_over_env_over_config",
+        "test_unresolved_raises_rather_than_defaulting",
+        "test_blank_values_do_not_count_as_resolved",
+        "test_a_config_without_an_id_is_not_declared",
+        "test_context_binds_and_restores",
+        "test_unset_fields_are_omitted_not_placeheld",
+        "test_the_legacy_tenant_id_env_var_is_still_accepted",
+        "_write"
+      ],
+      "last_modified": "2026-09-12T22:06:47Z",
+      "id": "runtime/test/test_tenancy.py"
+    },
+    {
+      "node_type": "CodebaseFile",
+      "language": "python",
+      "symbols": [
+        "FakeCompletion",
+        "FakeGateway",
+        "test_propose_corrected_payload_parses_json_from_fenced_response",
+        "test_run_self_correction_loop_succeeds_after_one_correction",
+        "test_run_self_correction_loop_returns_sentinel_when_exhausted",
+        "test_a_corrector_that_answers_in_prose_exhausts_rather_than_raising",
+        "test_the_payload_handed_on_is_the_last_real_one",
+        "test_a_working_corrector_is_unaffected",
+        "__init__",
+        "complete",
+        "activity_fn",
+        "Gateway",
+        "activity",
+        "R"
+      ],
+      "last_modified": "2026-09-12T22:06:47Z",
+      "id": "runtime/test/test_self_correction.py"
+    },
+    {
+      "node_type": "CodebaseFile",
+      "language": "python",
+      "symbols": [
+        "test_traceparent_is_w3c_shaped_inside_a_span",
+        "test_traceparent_matches_the_span_it_was_taken_from",
+        "test_nothing_to_propagate_outside_a_span",
+        "test_inject_leaves_existing_headers_alone",
+        "test_inject_is_a_no_op_with_no_active_span",
+        "test_the_gateway_sends_traceparent_and_a_trace_id",
+        "store",
+        "test_a_retrieval_emits_a_span_at_all",
+        "test_the_span_records_hit_identities_not_just_a_count",
+        "test_retrieved_text_is_never_put_on_the_span",
+        "test_an_empty_retrieval_still_reports_that_it_ran",
+        "test_the_retrieval_span_inherits_identity_and_nests",
+        "_FakeHttpx",
+        "post"
+      ],
+      "last_modified": "2026-09-12T22:06:47Z",
+      "id": "runtime/test/test_context_propagation.py"
+    },
+    {
+      "node_type": "CodebaseFile",
+      "language": "python",
+      "symbols": [
+        "Recorder",
+        "_queue",
+        "_enqueue",
+        "_status",
+        "test_a_pending_entry_replays_exactly_once",
+        "test_replaying_twice_does_not_signal_twice",
+        "test_a_discarded_entry_cannot_be_replayed",
+        "test_a_failed_handler_returns_the_entry_to_pending",
+        "test_an_unknown_task_is_a_different_error_from_a_resolved_one",
+        "__init__",
+        "__call__"
+      ],
+      "last_modified": "2026-09-12T22:06:47Z",
+      "id": "runtime/test/test_dlq_replay_idempotency.py"
+    },
+    {
+      "node_type": "CodebaseFile",
+      "language": "python",
+      "symbols": [
+        "backend",
+        "test_reserve_and_reconcile",
+        "test_concurrent_reserves_never_exceed_cap",
+        "one"
+      ],
+      "last_modified": "2026-09-12T22:06:47Z",
+      "id": "runtime/test/test_pg_budget_live.py"
+    },
+    {
+      "node_type": "CodebaseFile",
+      "language": "python",
+      "symbols": [
+        "tenant_yaml",
+        "test_a_bare_off_is_reported_not_obeyed_and_not_ignored",
+        "test_the_remedy_in_the_warning_actually_works",
+        "test_false_does_not_disable_a_guard",
+        "test_an_unrecognised_value_is_reported",
+        "test_an_unset_value_says_nothing",
+        "test_development_still_defaults_the_input_guard_off",
+        "test_a_valid_word_is_honoured",
+        "test_the_block_alias_still_maps_to_default",
+        "_write"
+      ],
+      "last_modified": "2026-09-12T22:06:47Z",
+      "id": "runtime/test/test_config_choices.py"
+    },
+    {
+      "node_type": "CodebaseFile",
+      "language": "python",
+      "symbols": [
+        "test_scaffold_parses_and_carries_the_declared_id",
+        "test_every_scaffolded_key_is_one_the_runtime_reads",
+        "test_modes_are_strings_not_booleans",
+        "test_env_overrides_ships_commented_out",
+        "test_isolation_round_trips",
+        "test_init_writes_the_config",
+        "test_init_never_overwrites_without_force",
+        "test_ci_callees_ship_with_their_caller",
+        "test_unknown_stack_and_isolation_are_refused",
+        "test_parser_covers_the_shell_functions_being_replaced",
+        "test_every_subcommand_dispatches_somewhere",
+        "test_shellenv_emits_evaluable_exports",
+        "test_main_returns_two_on_a_bad_argument",
+        "test_stacks_match_the_shipped_ci_templates",
+        "test_refuses_to_scaffold_into_the_framework_itself",
+        "test_force_does_not_bypass_the_guard",
+        "test_the_override_works_when_meant",
+        "test_two_markers_are_required_not_one",
+        "test_the_package_name_marker_reads_the_file_not_the_filename",
+        "test_cli_exit_code_is_distinct_for_a_refusal",
+        "test_the_scaffolded_id_is_the_id_that_was_asked_for",
+        "test_the_scaffold_round_trips_through_the_real_resolver",
+        "test_an_unusable_tenant_id_is_refused_at_creation",
+        "test_a_non_string_id_is_a_clear_error_not_a_typeerror",
+        "test_the_refusal_explains_the_shape",
+        "test_init_refuses_a_bad_id_before_writing_anything",
+        "test_the_scaffold_declares_the_installed_version",
+        "test_the_declared_version_follows_the_module_not_a_literal",
+        "test_the_declared_version_carries_no_source_marker"
+      ],
+      "last_modified": "2026-09-12T22:06:47Z",
+      "id": "runtime/test/test_cli.py"
+    },
+    {
+      "node_type": "CodebaseFile",
+      "language": "python",
+      "symbols": [
+        "test_workflow_stays_alive_and_resumes_with_human_fix",
+        "test_retries_exactly_once_not_temporals_default_policy"
+      ],
+      "last_modified": "2026-09-12T22:06:47Z",
+      "id": "runtime/test/test_recoverable_step.py"
+    },
+    {
+      "node_type": "CodebaseFile",
+      "language": "python",
+      "symbols": [
+        "_v2",
+        "_legacy",
+        "test_a_fresh_timestamped_signature_is_accepted",
+        "test_a_stale_request_is_refused",
+        "test_a_request_from_the_future_is_refused_too",
+        "test_ordinary_clock_skew_still_works",
+        "test_the_timestamp_cannot_be_moved_without_breaking_the_signature",
+        "test_a_tampered_body_is_refused",
+        "test_the_wrong_secret_is_refused",
+        "test_a_malformed_timestamp_is_refused_not_crashed",
+        "test_the_reason_separates_stale_from_forged",
+        "test_the_legacy_signature_still_verifies",
+        "test_the_tolerance_is_stated_in_seconds_and_is_short",
+        "test_a_non_finite_timestamp_cannot_skip_the_window",
+        "test_infinity_is_refused_as_well",
+        "test_the_signature_matches_the_portal_byte_for_byte",
+        "test_signatures_are_compared_in_constant_time"
+      ],
+      "last_modified": "2026-09-12T22:06:47Z",
+      "id": "runtime/test/test_replay_webhook_signature.py"
+    },
+    {
+      "node_type": "CodebaseFile",
+      "language": "python",
+      "symbols": [
+        "_clean",
+        "tenant",
+        "_declare",
+        "test_undeclared_returns_none",
+        "test_declared_in_tenant_yaml",
+        "test_env_overrides_tenant_yaml",
+        "test_broken_declaration_is_loud",
+        "test_runtime_auto_registers_the_declared_hook",
+        "test_required_still_raises_without_a_declaration",
+        "test_use_declared_false_isolates_the_harness_assertion",
+        "test_imperative_registration_wins",
+        "test_off_mode_never_loads_the_declaration",
+        "test_a_moderation_block_still_records_the_call",
+        "test_the_streaming_path_records_a_blocked_call_too",
+        "_block",
+        "_invoke"
+      ],
+      "last_modified": "2026-09-12T22:06:47Z",
+      "id": "runtime/test/test_moderation_declared.py"
+    },
+    {
+      "node_type": "CodebaseFile",
+      "language": "python",
+      "symbols": [
+        "_only_span",
+        "gateway",
+        "test_usage_is_recorded_when_the_provider_reported_it",
+        "test_unreported_usage_is_absent_not_zero",
+        "test_a_partial_usage_report_counts_as_no_report",
+        "test_zero_tokens_is_recorded_as_a_real_measurement",
+        "test_no_parent_span_emits_the_gateway_s_own",
+        "test_without_a_start_time_no_synthetic_span_is_invented",
+        "test_attributes_land_on_the_enclosing_span"
+      ],
+      "last_modified": "2026-09-12T22:06:47Z",
+      "id": "runtime/test/test_gateway_span_usage.py"
+    },
+    {
+      "node_type": "CodebaseFile",
+      "language": "python",
+      "symbols": [],
+      "last_modified": "2026-09-12T22:06:47Z",
+      "id": "runtime/workflows/__init__.py"
+    },
+    {
+      "node_type": "CodebaseFile",
+      "language": "python",
+      "symbols": [
+        "_dlq_task_id",
+        "AgentWorkflowInput",
+        "AgentWorkflowResult",
+        "BaseAgentWorkflow",
+        "dlq_enqueue_activity",
+        "self_correct_payload_activity",
+        "__init__",
+        "_hitl_approved",
+        "await_hitl_approval",
+        "run_with_hitl_gate",
+        "run_with_self_correction",
+        "run_with_recoverable_step",
+        "_Workflow",
+        "hitl_approved",
+        "hitl_approved_for",
+        "human_fix_payload",
+        "signal"
+      ],
+      "last_modified": "2026-09-12T22:06:47Z",
+      "id": "runtime/workflows/base_workflow.py"
+    },
+    {
+      "node_type": "Guardrail",
+      "title": "REQUIREMENTS & DESIGN",
+      "source_file": "/private/tmp/claude-501/-Users-mac-Documents-Bobby-Aqlaar-Apps-AgenticFramework/92e565e8-476c-4022-8d70-988bb3852adf/scratchpad/ts-tenant/.cursorrules",
+      "pillar": 1,
+      "created_at": "2026-09-12T22:06:48Z",
+      "id": "cursorrules:pillar:1"
+    },
+    {
+      "node_type": "Guardrail",
+      "title": "BUILD ARCHITECTURE (Ponytail Rules)",
+      "source_file": "/private/tmp/claude-501/-Users-mac-Documents-Bobby-Aqlaar-Apps-AgenticFramework/92e565e8-476c-4022-8d70-988bb3852adf/scratchpad/ts-tenant/.cursorrules",
+      "pillar": 2,
+      "created_at": "2026-09-12T22:06:48Z",
+      "id": "cursorrules:pillar:2"
+    },
+    {
+      "node_type": "Guardrail",
+      "title": "TRACING & EVALUATIONS",
+      "source_file": "/private/tmp/claude-501/-Users-mac-Documents-Bobby-Aqlaar-Apps-AgenticFramework/92e565e8-476c-4022-8d70-988bb3852adf/scratchpad/ts-tenant/.cursorrules",
+      "pillar": 3,
+      "created_at": "2026-09-12T22:06:48Z",
+      "id": "cursorrules:pillar:3"
+    },
+    {
+      "node_type": "Guardrail",
+      "title": "TESTING GUARDRAILS",
+      "source_file": "/private/tmp/claude-501/-Users-mac-Documents-Bobby-Aqlaar-Apps-AgenticFramework/92e565e8-476c-4022-8d70-988bb3852adf/scratchpad/ts-tenant/.cursorrules",
+      "pillar": 4,
+      "created_at": "2026-09-12T22:06:48Z",
+      "id": "cursorrules:pillar:4"
+    },
+    {
+      "node_type": "Guardrail",
+      "title": "OPERATIONS & SELF-IMPROVEMENT",
+      "source_file": "/private/tmp/claude-501/-Users-mac-Documents-Bobby-Aqlaar-Apps-AgenticFramework/92e565e8-476c-4022-8d70-988bb3852adf/scratchpad/ts-tenant/.cursorrules",
+      "pillar": 5,
+      "created_at": "2026-09-12T22:06:48Z",
+      "id": "cursorrules:pillar:5"
+    },
+    {
+      "node_type": "Guardrail",
+      "title": "INTERFACE CONSTRAINTS (Caveman Compression)",
+      "source_file": "/private/tmp/claude-501/-Users-mac-Documents-Bobby-Aqlaar-Apps-AgenticFramework/92e565e8-476c-4022-8d70-988bb3852adf/scratchpad/ts-tenant/.cursorrules",
+      "pillar": 6,
+      "created_at": "2026-09-12T22:06:48Z",
+      "id": "cursorrules:pillar:6"
+    },
+    {
+      "node_type": "Guardrail",
+      "title": "STACK-SPECIFIC RULES",
+      "source_file": "/private/tmp/claude-501/-Users-mac-Documents-Bobby-Aqlaar-Apps-AgenticFramework/92e565e8-476c-4022-8d70-988bb3852adf/scratchpad/ts-tenant/.cursorrules",
+      "pillar": 7,
+      "created_at": "2026-09-12T22:06:48Z",
+      "id": "cursorrules:pillar:7"
+    },
+    {
+      "node_type": "Guardrail",
+      "title": "OBSERVABILITY WIRE",
+      "source_file": "/private/tmp/claude-501/-Users-mac-Documents-Bobby-Aqlaar-Apps-AgenticFramework/92e565e8-476c-4022-8d70-988bb3852adf/scratchpad/ts-tenant/.cursorrules",
+      "pillar": 8,
+      "created_at": "2026-09-12T22:06:48Z",
+      "id": "cursorrules:pillar:8"
+    },
+    {
+      "node_type": "Guardrail",
+      "title": "MULTI-AGENT ORCHESTRATION",
+      "source_file": "/private/tmp/claude-501/-Users-mac-Documents-Bobby-Aqlaar-Apps-AgenticFramework/92e565e8-476c-4022-8d70-988bb3852adf/scratchpad/ts-tenant/.cursorrules",
+      "pillar": 9,
+      "created_at": "2026-09-12T22:06:48Z",
+      "id": "cursorrules:pillar:9"
+    },
+    {
+      "node_type": "Guardrail",
+      "title": "COST-OPTIMISATION ROUTING",
+      "source_file": "/private/tmp/claude-501/-Users-mac-Documents-Bobby-Aqlaar-Apps-AgenticFramework/92e565e8-476c-4022-8d70-988bb3852adf/scratchpad/ts-tenant/.cursorrules",
+      "pillar": 10,
+      "created_at": "2026-09-12T22:06:48Z",
+      "id": "cursorrules:pillar:10"
+    },
+    {
+      "node_type": "Guardrail",
+      "title": "UNTRUSTED CONTENT",
+      "source_file": "/private/tmp/claude-501/-Users-mac-Documents-Bobby-Aqlaar-Apps-AgenticFramework/92e565e8-476c-4022-8d70-988bb3852adf/scratchpad/ts-tenant/.cursorrules",
+      "pillar": 11,
+      "created_at": "2026-09-12T22:06:48Z",
+      "id": "cursorrules:pillar:11"
+    },
+    {
+      "node_type": "Guardrail",
+      "title": "SECRETS AND CREDENTIALS",
+      "source_file": "/private/tmp/claude-501/-Users-mac-Documents-Bobby-Aqlaar-Apps-AgenticFramework/92e565e8-476c-4022-8d70-988bb3852adf/scratchpad/ts-tenant/.cursorrules",
+      "pillar": 12,
+      "created_at": "2026-09-12T22:06:48Z",
+      "id": "cursorrules:pillar:12"
+    },
+    {
+      "node_type": "Guardrail",
+      "title": "GATE INTEGRITY",
+      "source_file": "/private/tmp/claude-501/-Users-mac-Documents-Bobby-Aqlaar-Apps-AgenticFramework/92e565e8-476c-4022-8d70-988bb3852adf/scratchpad/ts-tenant/.cursorrules",
+      "pillar": 13,
+      "created_at": "2026-09-12T22:06:48Z",
+      "id": "cursorrules:pillar:13"
+    },
+    {
+      "node_type": "Guardrail",
+      "title": "FIXTURE AND BASELINE DRIFT",
+      "source_file": "/private/tmp/claude-501/-Users-mac-Documents-Bobby-Aqlaar-Apps-AgenticFramework/92e565e8-476c-4022-8d70-988bb3852adf/scratchpad/ts-tenant/.cursorrules",
+      "pillar": 14,
+      "created_at": "2026-09-12T22:06:48Z",
+      "id": "cursorrules:pillar:14"
+    },
+    {
+      "node_type": "Guardrail",
+      "title": "AMBIGUOUS SIGNALS",
+      "source_file": "/private/tmp/claude-501/-Users-mac-Documents-Bobby-Aqlaar-Apps-AgenticFramework/92e565e8-476c-4022-8d70-988bb3852adf/scratchpad/ts-tenant/.cursorrules",
+      "pillar": 15,
+      "created_at": "2026-09-12T22:06:48Z",
+      "id": "cursorrules:pillar:15"
+    },
+    {
+      "node_type": "Guardrail",
+      "title": "RECOVERY PATHS",
+      "source_file": "/private/tmp/claude-501/-Users-mac-Documents-Bobby-Aqlaar-Apps-AgenticFramework/92e565e8-476c-4022-8d70-988bb3852adf/scratchpad/ts-tenant/.cursorrules",
+      "pillar": 16,
+      "created_at": "2026-09-12T22:06:48Z",
+      "id": "cursorrules:pillar:16"
+    },
+    {
+      "node_type": "Guardrail",
+      "title": "TS-REACT ADDENDUM",
+      "source_file": "/private/tmp/claude-501/-Users-mac-Documents-Bobby-Aqlaar-Apps-AgenticFramework/92e565e8-476c-4022-8d70-988bb3852adf/scratchpad/ts-tenant/.cursorrules",
+      "pillar": 17,
+      "created_at": "2026-09-12T22:06:48Z",
+      "id": "cursorrules:pillar:17"
+    },
+    {
+      "node_type": "Guardrail",
+      "title": "DESIGN & VALIDATION PLAYBOOKS",
+      "source_file": "/private/tmp/claude-501/-Users-mac-Documents-Bobby-Aqlaar-Apps-AgenticFramework/92e565e8-476c-4022-8d70-988bb3852adf/scratchpad/ts-tenant/.cursorrules",
+      "pillar": 18,
+      "created_at": "2026-09-12T22:06:48Z",
+      "id": "cursorrules:pillar:18"
+    }
+  ],
+  "edges": [
+    {
+      "edge_type": "IMPORTS",
+      "source": "runtime/worker.py",
+      "target": "runtime/__init__.py"
+    },
+    {
+      "edge_type": "IMPORTS",
+      "source": "runtime/metrics.py",
+      "target": "runtime/__init__.py"
+    },
+    {
+      "edge_type": "IMPORTS",
+      "source": "runtime/tracing.py",
+      "target": "runtime/__init__.py"
+    },
+    {
+      "edge_type": "IMPORTS",
+      "source": "runtime/input_guardrail.py",
+      "target": "runtime/__init__.py"
+    },
+    {
+      "edge_type": "IMPORTS",
+      "source": "runtime/config.py",
+      "target": "runtime/__init__.py"
+    },
+    {
+      "edge_type": "IMPORTS",
+      "source": "runtime/version.py",
+      "target": "runtime/__init__.py"
+    },
+    {
+      "edge_type": "IMPORTS",
+      "source": "runtime/temporal_client.py",
+      "target": "runtime/__init__.py"
+    },
+    {
+      "edge_type": "IMPORTS",
+      "source": "runtime/vector_store.py",
+      "target": "runtime/__init__.py"
+    },
+    {
+      "edge_type": "IMPORTS",
+      "source": "runtime/idempotency.py",
+      "target": "runtime/__init__.py"
+    },
+    {
+      "edge_type": "IMPORTS",
+      "source": "runtime/moderation.py",
+      "target": "runtime/__init__.py"
+    },
+    {
+      "edge_type": "IMPORTS",
+      "source": "runtime/replay_webhook_server.py",
+      "target": "runtime/__init__.py"
+    },
+    {
+      "edge_type": "IMPORTS",
+      "source": "runtime/tool_registry.py",
+      "target": "runtime/__init__.py"
+    },
+    {
+      "edge_type": "IMPORTS",
+      "source": "runtime/trace_redactor.py",
+      "target": "runtime/__init__.py"
+    },
+    {
+      "edge_type": "IMPORTS",
+      "source": "runtime/llm_gateway.py",
+      "target": "runtime/__init__.py"
+    },
+    {
+      "edge_type": "IMPORTS",
+      "source": "runtime/prompt_guard.py",
+      "target": "runtime/__init__.py"
+    },
+    {
+      "edge_type": "IMPORTS",
+      "source": "runtime/embeddings.py",
+      "target": "runtime/__init__.py"
+    },
+    {
+      "edge_type": "IMPORTS",
+      "source": "runtime/cli.py",
+      "target": "runtime/__init__.py"
+    },
+    {
+      "edge_type": "IMPORTS",
+      "source": "runtime/tenancy.py",
+      "target": "runtime/__init__.py"
+    },
+    {
+      "edge_type": "IMPORTS",
+      "source": "runtime/testing.py",
+      "target": "runtime/__init__.py"
+    },
+    {
+      "edge_type": "IMPORTS",
+      "source": "runtime/dead_letter.py",
+      "target": "runtime/__init__.py"
+    },
+    {
+      "edge_type": "IMPORTS",
+      "source": "src/lib/sum.test.ts",
+      "target": "src/lib/sum.ts"
+    },
+    {
+      "edge_type": "IMPORTS",
+      "source": "runtime/test/test_degraded_defaults.py",
+      "target": "runtime/__init__.py"
+    },
+    {
+      "edge_type": "IMPORTS",
+      "source": "runtime/test/test_gateway_provider_catalog.py",
+      "target": "runtime/__init__.py"
+    },
+    {
+      "edge_type": "IMPORTS",
+      "source": "runtime/test/test_provider_usage_reporting.py",
+      "target": "runtime/__init__.py"
+    },
+    {
+      "edge_type": "IMPORTS",
+      "source": "runtime/test/test_registry_shapes.py",
+      "target": "runtime/__init__.py"
+    },
+    {
+      "edge_type": "IMPORTS",
+      "source": "runtime/test/test_prompt_identity.py",
+      "target": "runtime/__init__.py"
+    },
+    {
+      "edge_type": "IMPORTS",
+      "source": "runtime/test/test_luhn_parity.py",
+      "target": "runtime/__init__.py"
+    },
+    {
+      "edge_type": "IMPORTS",
+      "source": "runtime/test/test_llm_gateway_budget.py",
+      "target": "runtime/__init__.py"
+    },
+    {
+      "edge_type": "IMPORTS",
+      "source": "runtime/test/conftest.py",
+      "target": "runtime/__init__.py"
+    },
+    {
+      "edge_type": "IMPORTS",
+      "source": "runtime/test/test_retry_visibility.py",
+      "target": "runtime/__init__.py"
+    },
+    {
+      "edge_type": "IMPORTS",
+      "source": "runtime/test/test_rag_poison_guard.py",
+      "target": "runtime/__init__.py"
+    },
+    {
+      "edge_type": "IMPORTS",
+      "source": "runtime/test/test_pg_pool.py",
+      "target": "runtime/__init__.py"
+    },
+    {
+      "edge_type": "IMPORTS",
+      "source": "runtime/test/test_framework_version.py",
+      "target": "runtime/__init__.py"
+    },
+    {
+      "edge_type": "IMPORTS",
+      "source": "runtime/test/test_tracing.py",
+      "target": "runtime/__init__.py"
+    },
+    {
+      "edge_type": "IMPORTS",
+      "source": "runtime/test/test_metrics.py",
+      "target": "runtime/__init__.py"
+    },
+    {
+      "edge_type": "IMPORTS",
+      "source": "runtime/test/test_idempotency_key.py",
+      "target": "runtime/__init__.py"
+    },
+    {
+      "edge_type": "IMPORTS",
+      "source": "runtime/test/test_pg_pool_coverage.py",
+      "target": "runtime/__init__.py"
+    },
+    {
+      "edge_type": "IMPORTS",
+      "source": "runtime/test/test_pillar3_conformance.py",
+      "target": "runtime/__init__.py"
+    },
+    {
+      "edge_type": "IMPORTS",
+      "source": "runtime/test/test_prompt_guard.py",
+      "target": "runtime/__init__.py"
+    },
+    {
+      "edge_type": "IMPORTS",
+      "source": "runtime/test/test_degrade_ladder.py",
+      "target": "runtime/__init__.py"
+    },
+    {
+      "edge_type": "IMPORTS",
+      "source": "runtime/test/test_judging.py",
+      "target": "runtime/__init__.py"
+    },
+    {
+      "edge_type": "IMPORTS",
+      "source": "runtime/test/test_stream_providers.py",
+      "target": "runtime/__init__.py"
+    },
+    {
+      "edge_type": "IMPORTS",
+      "source": "runtime/test/test_pair_score_spread.py",
+      "target": "runtime/__init__.py"
+    },
+    {
+      "edge_type": "IMPORTS",
+      "source": "runtime/test/test_tool_registry.py",
+      "target": "runtime/__init__.py"
+    },
+    {
+      "edge_type": "IMPORTS",
+      "source": "runtime/test/test_prompt_guard_modes.py",
+      "target": "runtime/__init__.py"
+    },
+    {
+      "edge_type": "IMPORTS",
+      "source": "runtime/test/test_provider_dispatch_cloud.py",
+      "target": "runtime/__init__.py"
+    },
+    {
+      "edge_type": "IMPORTS",
+      "source": "runtime/test/test_hitl_gate.py",
+      "target": "runtime/__init__.py"
+    },
+    {
+      "edge_type": "IMPORTS",
+      "source": "runtime/test/_gateway_fixtures.py",
+      "target": "runtime/__init__.py"
+    },
+    {
+      "edge_type": "IMPORTS",
+      "source": "runtime/test/test_trace_redactor.py",
+      "target": "runtime/__init__.py"
+    },
+    {
+      "edge_type": "IMPORTS",
+      "source": "runtime/test/test_tool_payloads.py",
+      "target": "runtime/__init__.py"
+    },
+    {
+      "edge_type": "IMPORTS",
+      "source": "runtime/test/test_moderation.py",
+      "target": "runtime/__init__.py"
+    },
+    {
+      "edge_type": "IMPORTS",
+      "source": "runtime/test/test_structured_output.py",
+      "target": "runtime/__init__.py"
+    },
+    {
+      "edge_type": "IMPORTS",
+      "source": "runtime/test/test_self_correction_workflow.py",
+      "target": "runtime/__init__.py"
+    },
+    {
+      "edge_type": "IMPORTS",
+      "source": "runtime/test/test_guardrail_evidence.py",
+      "target": "runtime/__init__.py"
+    },
+    {
+      "edge_type": "IMPORTS",
+      "source": "runtime/test/test_temporal_client.py",
+      "target": "runtime/__init__.py"
+    },
+    {
+      "edge_type": "IMPORTS",
+      "source": "runtime/test/test_ttft_stream.py",
+      "target": "runtime/__init__.py"
+    },
+    {
+      "edge_type": "IMPORTS",
+      "source": "runtime/test/test_otlp_endpoint.py",
+      "target": "runtime/__init__.py"
+    },
+    {
+      "edge_type": "IMPORTS",
+      "source": "runtime/test/test_memory_and_vector.py",
+      "target": "runtime/__init__.py"
+    },
+    {
+      "edge_type": "IMPORTS",
+      "source": "runtime/test/test_testing_doubles.py",
+      "target": "runtime/__init__.py"
+    },
+    {
+      "edge_type": "IMPORTS",
+      "source": "runtime/test/test_testing_double_parity.py",
+      "target": "runtime/__init__.py"
+    },
+    {
+      "edge_type": "IMPORTS",
+      "source": "runtime/test/test_dead_letter.py",
+      "target": "runtime/__init__.py"
+    },
+    {
+      "edge_type": "IMPORTS",
+      "source": "runtime/test/test_config.py",
+      "target": "runtime/__init__.py"
+    },
+    {
+      "edge_type": "IMPORTS",
+      "source": "runtime/test/test_input_guardrail.py",
+      "target": "runtime/__init__.py"
+    },
+    {
+      "edge_type": "IMPORTS",
+      "source": "runtime/test/test_tenancy.py",
+      "target": "runtime/__init__.py"
+    },
+    {
+      "edge_type": "IMPORTS",
+      "source": "runtime/test/test_self_correction.py",
+      "target": "runtime/__init__.py"
+    },
+    {
+      "edge_type": "IMPORTS",
+      "source": "runtime/test/test_context_propagation.py",
+      "target": "runtime/__init__.py"
+    },
+    {
+      "edge_type": "IMPORTS",
+      "source": "runtime/test/test_dlq_replay_idempotency.py",
+      "target": "runtime/__init__.py"
+    },
+    {
+      "edge_type": "IMPORTS",
+      "source": "runtime/test/test_pg_budget_live.py",
+      "target": "runtime/__init__.py"
+    },
+    {
+      "edge_type": "IMPORTS",
+      "source": "runtime/test/test_config_choices.py",
+      "target": "runtime/__init__.py"
+    },
+    {
+      "edge_type": "IMPORTS",
+      "source": "runtime/test/test_cli.py",
+      "target": "runtime/__init__.py"
+    },
+    {
+      "edge_type": "IMPORTS",
+      "source": "runtime/test/test_replay_webhook_signature.py",
+      "target": "runtime/__init__.py"
+    },
+    {
+      "edge_type": "IMPORTS",
+      "source": "runtime/test/test_moderation_declared.py",
+      "target": "runtime/__init__.py"
+    },
+    {
+      "edge_type": "IMPORTS",
+      "source": "runtime/test/test_gateway_span_usage.py",
+      "target": "runtime/__init__.py"
+    },
+    {
+      "edge_type": "IMPORTS",
+      "source": "runtime/workflows/base_workflow.py",
+      "target": "runtime/__init__.py"
+    }
+  ]
+}
