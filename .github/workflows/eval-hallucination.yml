@@ -24,6 +24,11 @@ jobs:
         with:
           python-version: "3.11"
           cache: "pip"
+          # Keyed on THIS file, not the default **/requirements.txt|pyproject.toml:
+          # the install below is a fixed list, and a Go or TS tenant has neither
+          # file, so the default glob hard-failed setup-python before anything
+          # ran (found onboarding scratch ts-react + go tenants).
+          cache-dependency-path: .github/workflows/eval-hallucination.yml
 
       - name: Install eval dependencies
         run: |

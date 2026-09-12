@@ -121,6 +121,28 @@ def test_ci_callees_ship_with_their_caller(tmp_path: Path):
             )
 
 
+@pytest.mark.parametrize("stack", STACKS)
+def test_composite_actions_ship_with_the_workflows_that_use_them(tmp_path: Path, monkeypatch, stack):
+    """`uses: ./.github/actions/<name>` resolves in the tenant's own repo. The
+    hook copied the actions; `tenant init` did not, so every CD workflow it
+    wrote failed at its first step. HOME is emptied so the checkout's own
+    actions are used, not whatever an older install left in ~/.agent-framework."""
+    import re as _re
+
+    monkeypatch.setenv("HOME", str(tmp_path / "empty-home"))
+    repo = tmp_path / "repo"
+    repo.mkdir()
+    init_tenant("acme", repo, stack=stack)
+
+    used = set()
+    for wf in (repo / ".github" / "workflows").glob("*.yml"):
+        used |= set(_re.findall(r"uses:\s*\./\.github/actions/([\w.-]+)", wf.read_text()))
+    assert used, "expected the CD workflows to reference composite actions"
+    missing = {a for a in used if not (repo / ".github" / "actions" / a / "action.yml").is_file()}
+    assert not missing, f"workflows use actions tenant init never wrote: {missing}"
+    assert "{{TENANT_ID}}" not in (repo / ".github" / "workflows" / "cd-production.yml").read_text()
+
+
 def test_unknown_stack_and_isolation_are_refused(tmp_path: Path):
     with pytest.raises(ValueError, match="stack"):
         init_tenant("acme", tmp_path, stack="cobol")

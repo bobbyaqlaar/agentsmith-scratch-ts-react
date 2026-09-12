@@ -296,13 +296,47 @@ def test_no_workflow_waits_on_the_approval_field_directly() -> None:
     A grep, because the alternative is noticing the next copy by hand.
     """
     root = Path(__file__).resolve().parents[2]
-    sources = [
-        p
-        for p in [*root.glob("examples/**/*.py"), *root.glob("runtime/workflows/*.py")]
-        if "__pycache__" not in p.parts
-    ]
-    assert len(sources) >= 5, f"the sweep found almost nothing to read: {sources}"
+    sources, minimum = _approval_wait_sources(root)
+    assert len(sources) >= minimum, f"the sweep found almost nothing to read: {sources}"
 
+    offenders = _approval_wait_offenders(root, sources)
+    assert not offenders, (
+        "these wait on the approval field directly instead of calling "
+        "await_hitl_approval, which consumes it:\n  " + "\n  ".join(offenders)
+    )
+
+
+# Never a tenant's own workflow code: dependency trees, and this runtime's tests
+# (which quote the forbidden pattern on purpose).
+_SWEEP_SKIP = {"__pycache__", ".git", ".venv", "venv", "node_modules", "site-packages", "test", "tests"}
+
+
+def _approval_wait_sources(root: Path) -> tuple[list[Path], int]:
+    """What the sweep reads, and how many files it must find to mean anything.
+
+    In the framework checkout: `examples/` — the reference implementation a
+    tenant copies — and the runtime's own workflows, at least 5 files.
+
+    In a TENANT, where runtime/ is vendored and `examples/` never is: the
+    tenant's own Python, which is where a pasted copy of the example actually
+    lives. The sweep used to read `examples/` unconditionally, found only
+    runtime/workflows' 2 files in AqlaarTeleologyStudio, and failed SEC-HITL-001
+    on its own sanity guard. The guard there is the vendored workflows
+    themselves — always present, so an empty sweep still fails.
+    """
+    workflows = [p for p in root.glob("runtime/workflows/*.py") if "__pycache__" not in p.parts]
+    if (root / "examples").is_dir():
+        examples = [p for p in root.glob("examples/**/*.py") if "__pycache__" not in p.parts]
+        return [*examples, *workflows], 5
+    tenant = [
+        p for p in root.rglob("*.py")
+        if not _SWEEP_SKIP.intersection(p.relative_to(root).parts)
+        and p.relative_to(root).parts[0] != "scripts"
+    ]
+    return tenant, max(1, len(workflows))
+
+
+def _approval_wait_offenders(root: Path, sources: list[Path]) -> list[str]:
     offenders = []
     for path in sources:
         text = path.read_text(encoding="utf-8", errors="ignore")
@@ -312,10 +346,27 @@ def test_no_workflow_waits_on_the_approval_field_directly() -> None:
             stripped = line.strip()
             if stripped.startswith("#") or stripped.startswith("*"):
                 continue  # prose explaining the rule is not a breach of it
-            if "_hitl_approved" in stripped and "wait_condition" in text and "lambda" in stripped:
+            if "_hitl_approved" in stripped and "lambda" in stripped:
                 offenders.append(f"{path.relative_to(root)}: {stripped}")
+    return offenders
 
-    assert not offenders, (
-        "these wait on the approval field directly instead of calling "
-        "await_hitl_approval, which consumes it:\n  " + "\n  ".join(offenders)
+
+def test_the_sweep_reads_a_vendored_tenants_own_workflows(tmp_path) -> None:
+    """A tenant with runtime/ vendored and no examples/: the sweep must read
+    the tenant's own code (and catch a hand-rolled wait there), not fail for
+    want of the framework's examples."""
+    (tmp_path / "runtime" / "workflows").mkdir(parents=True)
+    (tmp_path / "runtime" / "workflows" / "base_workflow.py").write_text("# base\n")
+    (tmp_path / "workflows").mkdir()
+    pasted = tmp_path / "workflows" / "kyc.py"
+    pasted.write_text(
+        "await workflow.wait_condition(lambda: self._hitl_approved is not None)\n"
     )
+
+    sources, minimum = _approval_wait_sources(tmp_path)
+
+    assert pasted in sources
+    assert len(sources) >= minimum
+    assert _approval_wait_offenders(tmp_path, sources) == [
+        "workflows/kyc.py: await workflow.wait_condition(lambda: self._hitl_approved is not None)"
+    ]

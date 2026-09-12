@@ -1,23 +1,39 @@
 # Tenant-scoped CD — applies to THIS repository only.
-# tenant.id: project
+# tenant.id: agentsmith-scratch-ts-react
 # Do not reference org-level shared secrets beyond this tenant's GitHub Environment.
 
 name: "CD: Staging Deploy"
 
-# Runs on every push to develop.
+# Runs after CI succeeds on a push to develop.
 # Eval fail gate (below 0.75) + smoke test. Staging failure blocks promotion to main.
 
+# GATED ON CI. This used to be `on: push`, running in PARALLEL with CI with
+# nothing making it wait: AqlaarTeleologyStudio's "CD: Production Deploy"
+# went green on commits whose CI failed (a no-op only because DEPLOY_COMMAND was
+# unset — set it, and a red commit ships). Now it runs when the stack's CI
+# workflow COMPLETES for a push to develop, and the job proceeds only if that run
+# succeeded, deploying exactly the commit CI validated (head_sha), not whatever
+# develop points at by the time this starts.
+#
+# `workflows:` names all three stack CIs; a tenant has one, and GitHub ignores
+# names that match no workflow. Renaming your CI workflow's `name:` silently
+# disconnects this — keep them in step.
 on:
-  push:
+  workflow_run:
+    workflows: ["CI: Python/FastAPI Guardrails", "CI: TypeScript/React Guardrails", "CI: Go Guardrails"]
+    types: [completed]
     branches: ["develop"]
 
 concurrency:
-  group: cd-staging-${{ github.ref }}
+  group: cd-staging-${{ github.event.workflow_run.head_branch }}
   cancel-in-progress: false   # Never cancel in-flight deploys
 
 jobs:
   deploy:
     name: "Deploy to Staging"
+    if: >-
+      github.event.workflow_run.conclusion == 'success'
+      && github.event.workflow_run.event == 'push'
     runs-on: ubuntu-latest
     timeout-minutes: 30
     environment: staging
@@ -32,6 +48,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
+          ref: ${{ github.event.workflow_run.head_sha }}
           token: ${{ secrets.GITHUB_TOKEN }}
           fetch-depth: 0
 
@@ -65,6 +82,11 @@ jobs:
         with:
           python-version: "3.11"
           cache: "pip"
+          # Keyed on THIS file, not the default **/requirements.txt|pyproject.toml:
+          # the install below is a fixed list, and a Go or TS tenant has neither
+          # file, so the default glob hard-failed setup-python before anything
+          # ran (found onboarding scratch ts-react + go tenants).
+          cache-dependency-path: .github/workflows/cd-staging.yml
 
       - name: Install framework dependencies
         run: |

@@ -21,7 +21,7 @@ jobs:
       # delegates several controls straight to existing suites (SEC-HITL-001
       # -> runtime/test/test_hitl_gate.py, SEC-BUDGET-001 ->
       # runtime/test/test_llm_gateway_budget.py, SEC-SELF-001 ->
-      # scripts/test/test_workflow_template_wiring.py — see
+      # runtime/test/test_self_correction.py — see
       # security/runners/delegating.py), which need real deps to import. With
       # the minimal set they fail on a missing dev dependency and report it as
       # a compliance violation — a hollow job is not a light one.
@@ -30,7 +30,12 @@ jobs:
       # checking CI after onboarding) must not hard-fail this step just
       # because the file doesn't exist.
       - run: if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-      - run: pip install pytest pytest-asyncio pyyaml pydantic jsonschema
+      # httpx + tenacity are the runtime's own core dependencies (pyproject.toml
+      # `dependencies`). Without them SEC-BUDGET-001 failed in every tenant
+      # with no requirements.txt — AqlaarTeleologyStudio: three of
+      # test_llm_gateway_budget.py's retry tests, `No module named 'httpx'`,
+      # reported as a budget-control violation.
+      - run: pip install pytest pytest-asyncio pyyaml pydantic jsonschema "httpx>=0.25,<1.0" "tenacity>=8.2,<10.0"
       # NOT `pytest scripts/test/test_security_*.py` (removed — every one of
       # those 8 files is framework-internal: several read
       # fixtures/security/control_registry.json off the FRAMEWORK's own repo

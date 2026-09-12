@@ -4,7 +4,9 @@ on:
   pull_request:
     branches: ["main", "develop"]
   push:
-    branches: ["main"]
+    # develop too: cd-staging.yml deploys only after THIS workflow succeeds on
+    # a push to develop, so without it staging never deploys.
+    branches: ["main", "develop"]
 
 concurrency:
   group: ci-ts-${{ github.ref }}
@@ -37,11 +39,20 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      # A project's own `typecheck` script wins; otherwise `tsc -b --noEmit`,
+      # which follows project references. `npm run tsc` assumed a script no
+      # standard scaffold defines — a stock `create-vite` react-ts project
+      # failed here with `Missing script: "tsc"` before any real check ran.
       - name: Type check
-        run: npm run tsc -- --noEmit
+        run: |
+          if node -e 'process.exit(require("./package.json").scripts?.typecheck ? 0 : 1)'; then
+            npm run typecheck
+          else
+            npx --no-install tsc -b --noEmit
+          fi
 
       - name: Lint
-        run: npm run lint
+        run: npm run lint --if-present
 
       - name: "Validate Knowledge Graph (Pillar 2)"
         run: |
@@ -91,8 +102,14 @@ jobs:
           AGENT_OWNER_ID: ${{ secrets.AGENT_OWNER_ID || 'ci@agenticframework' }}
         run: python3 scripts/verify_system.py || true # non-blocking — inform, not gate
 
+      # Runner-agnostic: CI=true is what puts Jest into single-run mode, and
+      # Vitest detects it the same way. `-- --watchAll=false --ci --coverage`
+      # were Jest-only flags — Vitest, the default runner for a Vite project,
+      # exits with `Unknown option --watchAll`.
       - name: Unit tests
-        run: npm test -- --watchAll=false --ci --coverage
+        env:
+          CI: "true"
+        run: npm test
 
   eval-scorecard:
     name: "Eval scorecard"

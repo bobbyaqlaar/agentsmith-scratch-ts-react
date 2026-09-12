@@ -9,4 +9,4 @@ Before writing any code or making file changes
 - (Operations and Self-Improvement) On every session start, read .agent-history.log to avoid repeating past mistakes. After two consecutive identical tool failures, log MAJOR, halt, and escalate.
 - (Interface Constraints (Caveman Compression)) Default to code blocks, data structures, terminal commands and variables. Skip pleasantries, preambles and meta-summaries — they cost tokens and add nothing. This removes filler; it does not withhold judgement. Always say, in plain sentences, what failed and why you think so, a risk you are taking, an assumption you had to make, or the reason you stopped. Pillar 5 tells you to escalate after two identical failures, and an escalation nobody can read is not an escalation. Terse by default, explicit when something is wrong.
 - OTel endpoint: http://localhost:6006/v1/traces
-- Owner: unknown@unknown | Project: ts-tenant
+- Owner: unknown@unknown | Project: agentsmith-scratch-ts-react

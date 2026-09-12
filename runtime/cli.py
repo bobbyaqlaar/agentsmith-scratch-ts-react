@@ -305,8 +305,55 @@ def init_tenant(
         if dest.exists() and not force:
             print(f"  = .github/workflows/{name} exists — left untouched")
             continue
-        shutil.copyfile(src, dest)
+        # Same substitution hooks/post-checkout makes; copied verbatim, the
+        # workflows carried a literal `{{TENANT_ID}}`.
+        dest.write_text(src.read_text(encoding="utf-8").replace("{{TENANT_ID}}", tenant_id), encoding="utf-8")
         written.append(f".github/workflows/{name}")
+
+    written += _copy_composite_actions(root)
+    return written
+
+
+def _actions_dir() -> Optional[Path]:
+    """Composite actions the cd-* workflows call as `./.github/actions/<name>`.
+
+    Installed location first, then the checkout — the same order, for the same
+    reason, as `_templates_dir`.
+    """
+    for candidate in (
+        Path.home() / ".agent-framework" / "github-actions",
+        Path(__file__).resolve().parent.parent / ".github" / "actions",
+    ):
+        if candidate.is_dir():
+            return candidate
+    return None
+
+
+def _copy_composite_actions(root: Path) -> list[str]:
+    """`uses: ./.github/actions/<name>` resolves inside the TENANT's repo, so the
+    actions must be copied in beside the workflows that call them.
+
+    hooks/post-checkout always did this; `tenant init` wrote cd-staging.yml and
+    cd-production.yml without it, and both fail at their first `uses:` with
+    "Can't find 'action.yml'". Per action, never overwriting — a tenant may
+    have adjusted one (KYC Sentinel diffs its gcp-auth against the framework's
+    in CI precisely because they are copies).
+    """
+    source = _actions_dir()
+    if source is None:
+        print(
+            "  ! no composite actions found — cd-staging.yml/cd-production.yml will fail "
+            "at ./.github/actions/*. Re-run install-ai-stack.sh, or use a checkout.",
+            file=sys.stderr,
+        )
+        return []
+    written = []
+    for action in sorted(p for p in source.iterdir() if p.is_dir()):
+        dest = root / ".github" / "actions" / action.name
+        if dest.exists():
+            continue
+        shutil.copytree(action, dest)
+        written.append(f".github/actions/{action.name}")
     return written
 
 
@@ -333,6 +380,17 @@ def _cmd_tenant_init(args: argparse.Namespace) -> int:
     for path in written:
         print(f"  + {path}")
     print(f"\nTenant '{args.tenant_id}' scaffolded ({args.stack}, {args.isolation}).")
+    # The generated workflows run `python3 scripts/*.py` from THIS repo, and
+    # those import runtime.* and read fixtures/. Vendoring them is
+    # hooks/post-checkout's job — one implementation, not a second copy here
+    # to drift — so say plainly that the scaffold is not usable until it runs.
+    if not (root / "scripts" / "run-security-checks.py").exists():
+        print(
+            "\nNot done yet: scripts/, runtime/ and fixtures/ are not vendored, and every "
+            "scripts/*.py step in the workflows above fails until they are.\n"
+            "Commit, then run `git checkout` (no path — `git checkout .` discards "
+            "uncommitted work) to fire the AgentSmith post-checkout hook."
+        )
     if args.isolation == "dedicated":
         print("Apply runtime/k8s/dedicated-tenant/ to provision its own worker pool.")
     return 0

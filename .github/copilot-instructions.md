@@ -1,5 +1,5 @@
 <!-- Auto-generated from templates/agent-rules.yaml — do not edit directly. -->
-# Copilot instructions — ts-tenant
+# Copilot instructions — agentsmith-scratch-ts-react
 
 Follow these when suggesting or editing code in this repository. Full reasoning
 for each rule is in `AGENTS.md`; this file is the condensed form Copilot sees on
@@ -29,4 +29,4 @@ every request.
 
 Design/validation playbooks (Design Review, Validation & Test Checklist): see `AGENTS.md`.
 
-Tests: `npm test -- --watchAll=false --ci`
+Tests: `CI=true npm test`
