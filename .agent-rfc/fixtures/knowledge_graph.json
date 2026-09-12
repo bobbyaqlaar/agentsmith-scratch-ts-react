@@ -20,7 +20,7 @@
         "_extract_json_text",
         "parse_llm_json"
       ],
-      "last_modified": "2026-09-12T23:06:33Z",
+      "last_modified": "2026-09-12T23:08:56Z",
       "id": "runtime/structured_output.py"
     },
     {
@@ -41,7 +41,7 @@
         "__exit__",
         "__getattr__"
       ],
-      "last_modified": "2026-09-12T23:06:33Z",
+      "last_modified": "2026-09-12T23:08:56Z",
       "id": "runtime/pg_pool.py"
     },
     {
@@ -53,14 +53,14 @@
         "_start_temporal_worker",
         "_start_celery_worker"
       ],
-      "last_modified": "2026-09-12T23:06:33Z",
+      "last_modified": "2026-09-12T23:08:56Z",
       "id": "runtime/worker.py"
     },
     {
       "node_type": "CodebaseFile",
       "language": "python",
       "symbols": [],
-      "last_modified": "2026-09-12T23:06:33Z",
+      "last_modified": "2026-09-12T23:08:56Z",
       "id": "runtime/__init__.py"
     },
     {
@@ -77,7 +77,7 @@
         "configure_metrics",
         "_reset_cache"
       ],
-      "last_modified": "2026-09-12T23:06:33Z",
+      "last_modified": "2026-09-12T23:08:56Z",
       "id": "runtime/metrics.py"
     },
     {
@@ -103,7 +103,7 @@
         "is_recording",
         "on_start"
       ],
-      "last_modified": "2026-09-12T23:06:33Z",
+      "last_modified": "2026-09-12T23:08:56Z",
       "id": "runtime/tracing.py"
     },
     {
@@ -114,7 +114,7 @@
         "propose_corrected_payload",
         "run_self_correction_loop"
       ],
-      "last_modified": "2026-09-12T23:06:33Z",
+      "last_modified": "2026-09-12T23:08:56Z",
       "id": "runtime/self_correction.py"
     },
     {
@@ -130,7 +130,7 @@
         "scrub_messages",
         "_claim"
       ],
-      "last_modified": "2026-09-12T23:06:33Z",
+      "last_modified": "2026-09-12T23:08:56Z",
       "id": "runtime/input_guardrail.py"
     },
     {
@@ -150,7 +150,7 @@
         "resolve_choice",
         "resolve"
       ],
-      "last_modified": "2026-09-12T23:06:33Z",
+      "last_modified": "2026-09-12T23:08:56Z",
       "id": "runtime/config.py"
     },
     {
@@ -165,7 +165,7 @@
         "warn_if_declared_version_differs",
         "_reset_cache"
       ],
-      "last_modified": "2026-09-12T23:06:33Z",
+      "last_modified": "2026-09-12T23:08:56Z",
       "id": "runtime/version.py"
     },
     {
@@ -176,7 +176,7 @@
         "temporal_address",
         "connect"
       ],
-      "last_modified": "2026-09-12T23:06:33Z",
+      "last_modified": "2026-09-12T23:08:56Z",
       "id": "runtime/temporal_client.py"
     },
     {
@@ -188,7 +188,7 @@
         "metric_exporter",
         "_exporter"
       ],
-      "last_modified": "2026-09-12T23:06:33Z",
+      "last_modified": "2026-09-12T23:08:56Z",
       "id": "runtime/otlp.py"
     },
     {
@@ -211,7 +211,7 @@
         "_ensure_schema",
         "_query"
       ],
-      "last_modified": "2026-09-12T23:06:33Z",
+      "last_modified": "2026-09-12T23:08:56Z",
       "id": "runtime/vector_store.py"
     },
     {
@@ -230,7 +230,7 @@
         "purge_expired",
         "_connect"
       ],
-      "last_modified": "2026-09-12T23:06:33Z",
+      "last_modified": "2026-09-12T23:08:56Z",
       "id": "runtime/idempotency.py"
     },
     {
@@ -252,7 +252,7 @@
         "apply_output_moderation",
         "__init__"
       ],
-      "last_modified": "2026-09-12T23:06:33Z",
+      "last_modified": "2026-09-12T23:08:56Z",
       "id": "runtime/moderation.py"
     },
     {
@@ -269,7 +269,7 @@
         "log_message",
         "_connect"
       ],
-      "last_modified": "2026-09-12T23:06:33Z",
+      "last_modified": "2026-09-12T23:08:56Z",
       "id": "runtime/replay_webhook_server.py"
     },
     {
@@ -278,7 +278,7 @@
       "symbols": [
         "security_artefact_path"
       ],
-      "last_modified": "2026-09-12T23:06:33Z",
+      "last_modified": "2026-09-12T23:08:56Z",
       "id": "runtime/security_paths.py"
     },
     {
@@ -304,7 +304,7 @@
         "invoke",
         "decorator"
       ],
-      "last_modified": "2026-09-12T23:06:33Z",
+      "last_modified": "2026-09-12T23:08:56Z",
       "id": "runtime/tool_registry.py"
     },
     {
@@ -338,7 +338,7 @@
         "_truncate",
         "configured"
       ],
-      "last_modified": "2026-09-12T23:06:33Z",
+      "last_modified": "2026-09-12T23:08:56Z",
       "id": "runtime/trace_redactor.py"
     },
     {
@@ -354,7 +354,7 @@
         "parity_violation",
         "pair_score_spread"
       ],
-      "last_modified": "2026-09-12T23:06:33Z",
+      "last_modified": "2026-09-12T23:08:56Z",
       "id": "runtime/judging.py"
     },
     {
@@ -409,7 +409,7 @@
         "_hook",
         "_post_with_retry"
       ],
-      "last_modified": "2026-09-12T23:06:33Z",
+      "last_modified": "2026-09-12T23:08:56Z",
       "id": "runtime/llm_gateway.py"
     },
     {
@@ -433,7 +433,7 @@
         "__init__",
         "blocked"
       ],
-      "last_modified": "2026-09-12T23:06:33Z",
+      "last_modified": "2026-09-12T23:08:56Z",
       "id": "runtime/prompt_guard.py"
     },
     {
@@ -451,7 +451,7 @@
         "_one",
         "_load"
       ],
-      "last_modified": "2026-09-12T23:06:33Z",
+      "last_modified": "2026-09-12T23:08:56Z",
       "id": "runtime/embeddings.py"
     },
     {
@@ -475,7 +475,7 @@
         "build_parser",
         "main"
       ],
-      "last_modified": "2026-09-12T23:06:33Z",
+      "last_modified": "2026-09-12T23:08:56Z",
       "id": "runtime/cli.py"
     },
     {
@@ -489,7 +489,7 @@
         "current_identity",
         "current_tenant_id"
       ],
-      "last_modified": "2026-09-12T23:06:33Z",
+      "last_modified": "2026-09-12T23:08:56Z",
       "id": "runtime/tenancy.py"
     },
     {
@@ -501,7 +501,7 @@
         "system_fingerprint",
         "prompt_attributes"
       ],
-      "last_modified": "2026-09-12T23:06:33Z",
+      "last_modified": "2026-09-12T23:08:56Z",
       "id": "runtime/prompt_identity.py"
     },
     {
@@ -513,7 +513,7 @@
         "warn_once",
         "warn_degraded_default"
       ],
-      "last_modified": "2026-09-12T23:06:33Z",
+      "last_modified": "2026-09-12T23:08:56Z",
       "id": "runtime/environment.py"
     },
     {
@@ -522,7 +522,7 @@
       "symbols": [
         "luhn_valid"
       ],
-      "last_modified": "2026-09-12T23:06:33Z",
+      "last_modified": "2026-09-12T23:08:56Z",
       "id": "runtime/luhn.py"
     },
     {
@@ -546,7 +546,7 @@
         "degrade_tiers",
         "__getattr__"
       ],
-      "last_modified": "2026-09-12T23:06:33Z",
+      "last_modified": "2026-09-12T23:08:56Z",
       "id": "runtime/testing.py"
     },
     {
@@ -555,7 +555,7 @@
       "symbols": [
         "ascii_digits"
       ],
-      "last_modified": "2026-09-12T23:06:33Z",
+      "last_modified": "2026-09-12T23:08:56Z",
       "id": "runtime/pii_patterns.py"
     },
     {
@@ -578,7 +578,7 @@
         "_release_claim",
         "discard"
       ],
-      "last_modified": "2026-09-12T23:06:33Z",
+      "last_modified": "2026-09-12T23:08:56Z",
       "id": "runtime/dead_letter.py"
     },
     {
@@ -589,7 +589,7 @@
         "handler",
         "_signal"
       ],
-      "last_modified": "2026-09-12T23:06:33Z",
+      "last_modified": "2026-09-12T23:08:56Z",
       "id": "runtime/temporal_replay.py"
     },
     {
@@ -621,7 +621,7 @@
         "parse_cloud_response",
         "_get_access_token"
       ],
-      "last_modified": "2026-09-12T23:06:33Z",
+      "last_modified": "2026-09-12T23:08:56Z",
       "id": "runtime/provider_dispatch.py"
     },
     {
@@ -641,7 +641,7 @@
         "_evict",
         "_message_tokens"
       ],
-      "last_modified": "2026-09-12T23:06:33Z",
+      "last_modified": "2026-09-12T23:08:56Z",
       "id": "runtime/conversation_memory.py"
     },
     {
@@ -661,7 +661,7 @@
         "test_every_vector_alias_still_resolves",
         "test_the_defaults_themselves_are_unchanged"
       ],
-      "last_modified": "2026-09-12T23:06:33Z",
+      "last_modified": "2026-09-12T23:08:56Z",
       "id": "runtime/test/test_degraded_defaults.py"
     },
     {
@@ -673,7 +673,7 @@
         "test_a_per_role_override_still_wins",
         "test_an_override_that_is_unset_falls_back_rather_than_going_dark"
       ],
-      "last_modified": "2026-09-12T23:06:33Z",
+      "last_modified": "2026-09-12T23:08:56Z",
       "id": "runtime/test/test_gateway_provider_catalog.py"
     },
     {
@@ -692,7 +692,7 @@
         "test_every_cloud_anthropic_route_sends_temperature",
         "test_a_temperature_above_the_anthropic_maximum_is_clamped_loudly"
       ],
-      "last_modified": "2026-09-12T23:06:33Z",
+      "last_modified": "2026-09-12T23:08:56Z",
       "id": "runtime/test/test_provider_usage_reporting.py"
     },
     {
@@ -713,7 +713,7 @@
         "test_anthropic_empty_content_block_parses_to_empty_string",
         "test_pii_detection_tolerates_none"
       ],
-      "last_modified": "2026-09-12T23:06:33Z",
+      "last_modified": "2026-09-12T23:08:56Z",
       "id": "runtime/test/test_registry_shapes.py"
     },
     {
@@ -730,7 +730,7 @@
         "test_absent_facts_are_absent_keys",
         "test_the_gateway_puts_the_digest_on_the_span"
       ],
-      "last_modified": "2026-09-12T23:06:33Z",
+      "last_modified": "2026-09-12T23:08:56Z",
       "id": "runtime/test/test_prompt_identity.py"
     },
     {
@@ -742,7 +742,7 @@
         "test_guard_and_redactor_share_one_implementation",
         "test_guard_and_redactor_agree_end_to_end"
       ],
-      "last_modified": "2026-09-12T23:06:33Z",
+      "last_modified": "2026-09-12T23:08:56Z",
       "id": "runtime/test/test_luhn_parity.py"
     },
     {
@@ -767,7 +767,7 @@
         "fake_post",
         "fake_post_401"
       ],
-      "last_modified": "2026-09-12T23:06:33Z",
+      "last_modified": "2026-09-12T23:08:56Z",
       "id": "runtime/test/test_llm_gateway_budget.py"
     },
     {
@@ -778,7 +778,7 @@
         "spans",
         "identity_processor"
       ],
-      "last_modified": "2026-09-12T23:06:33Z",
+      "last_modified": "2026-09-12T23:08:56Z",
       "id": "runtime/test/conftest.py"
     },
     {
@@ -801,7 +801,7 @@
         "__aexit__",
         "post"
       ],
-      "last_modified": "2026-09-12T23:06:33Z",
+      "last_modified": "2026-09-12T23:08:56Z",
       "id": "runtime/test/test_retry_visibility.py"
     },
     {
@@ -817,7 +817,7 @@
         "test_detection_is_the_same_engine_as_direct_prompts",
         "test_it_quarantines_a_poisoned_document_retrieved_from_a_real_store"
       ],
-      "last_modified": "2026-09-12T23:06:33Z",
+      "last_modified": "2026-09-12T23:08:56Z",
       "id": "runtime/test/test_rag_poison_guard.py"
     },
     {
@@ -829,7 +829,7 @@
         "test_a_decommissioned_entry_is_actually_marked",
         "test_no_profile_binds_a_decommissioned_model"
       ],
-      "last_modified": "2026-09-12T23:06:33Z",
+      "last_modified": "2026-09-12T23:08:56Z",
       "id": "runtime/test/test_no_role_binds_a_dead_model.py"
     },
     {
@@ -861,7 +861,7 @@
         "closeall",
         "_direct_connect"
       ],
-      "last_modified": "2026-09-12T23:06:33Z",
+      "last_modified": "2026-09-12T23:08:56Z",
       "id": "runtime/test/test_pg_pool.py"
     },
     {
@@ -892,7 +892,7 @@
         "test_it_never_raises",
         "test_every_worker_entrypoint_runs_the_check"
       ],
-      "last_modified": "2026-09-12T23:06:33Z",
+      "last_modified": "2026-09-12T23:08:56Z",
       "id": "runtime/test/test_framework_version.py"
     },
     {
@@ -915,7 +915,7 @@
         "wire_transfer",
         "solo"
       ],
-      "last_modified": "2026-09-12T23:06:33Z",
+      "last_modified": "2026-09-12T23:08:56Z",
       "id": "runtime/test/test_tracing.py"
     },
     {
@@ -937,7 +937,7 @@
         "add",
         "record"
       ],
-      "last_modified": "2026-09-12T23:06:33Z",
+      "last_modified": "2026-09-12T23:08:56Z",
       "id": "runtime/test/test_metrics.py"
     },
     {
@@ -955,7 +955,7 @@
         "test_json_payloads_hash_exactly_as_they_did_before",
         "Ctx"
       ],
-      "last_modified": "2026-09-12T23:06:33Z",
+      "last_modified": "2026-09-12T23:08:56Z",
       "id": "runtime/test/test_idempotency_key.py"
     },
     {
@@ -977,7 +977,7 @@
         "cursor",
         "close"
       ],
-      "last_modified": "2026-09-12T23:06:33Z",
+      "last_modified": "2026-09-12T23:08:56Z",
       "id": "runtime/test/test_pg_pool_coverage.py"
     },
     {
@@ -994,7 +994,7 @@
         "test_resource_carries_the_per_process_half",
         "test_owner_is_omitted_rather_than_guessed"
       ],
-      "last_modified": "2026-09-12T23:06:33Z",
+      "last_modified": "2026-09-12T23:08:56Z",
       "id": "runtime/test/test_pillar3_conformance.py"
     },
     {
@@ -1017,7 +1017,7 @@
         "test_zero_width_joiners_are_not_treated_as_padding",
         "test_a_bidi_override_payload_is_flagged"
       ],
-      "last_modified": "2026-09-12T23:06:33Z",
+      "last_modified": "2026-09-12T23:08:56Z",
       "id": "runtime/test/test_prompt_guard.py"
     },
     {
@@ -1035,7 +1035,7 @@
         "test_cycle_in_degrade_chain_terminates",
         "test_a_chain_with_no_configured_tier_refuses_rather_than_returning_nothing"
       ],
-      "last_modified": "2026-09-12T23:06:33Z",
+      "last_modified": "2026-09-12T23:08:56Z",
       "id": "runtime/test/test_degrade_ladder.py"
     },
     {
@@ -1047,7 +1047,7 @@
         "__init__",
         "run"
       ],
-      "last_modified": "2026-09-12T23:06:33Z",
+      "last_modified": "2026-09-12T23:08:56Z",
       "id": "runtime/test/_recoverable_step_fixtures.py"
     },
     {
@@ -1073,7 +1073,7 @@
         "test_warn_helper_logs_only_when_not_independent",
         "test_run_evals_delegates_to_the_shared_function"
       ],
-      "last_modified": "2026-09-12T23:06:33Z",
+      "last_modified": "2026-09-12T23:08:56Z",
       "id": "runtime/test/test_judging.py"
     },
     {
@@ -1103,7 +1103,7 @@
         "_stream",
         "_ErrorResp"
       ],
-      "last_modified": "2026-09-12T23:06:33Z",
+      "last_modified": "2026-09-12T23:08:56Z",
       "id": "runtime/test/test_stream_providers.py"
     },
     {
@@ -1117,7 +1117,7 @@
         "test_rows_without_a_pair_are_ignored",
         "test_more_than_two_members_uses_the_full_range"
       ],
-      "last_modified": "2026-09-12T23:06:33Z",
+      "last_modified": "2026-09-12T23:08:56Z",
       "id": "runtime/test/test_pair_score_spread.py"
     },
     {
@@ -1138,7 +1138,7 @@
         "unlisted_by_default",
         "greet"
       ],
-      "last_modified": "2026-09-12T23:06:33Z",
+      "last_modified": "2026-09-12T23:08:56Z",
       "id": "runtime/test/test_tool_registry.py"
     },
     {
@@ -1157,7 +1157,7 @@
         "test_clean_prompt_reports_nothing",
         "test_upgrade_does_not_silently_stop_blocking"
       ],
-      "last_modified": "2026-09-12T23:06:33Z",
+      "last_modified": "2026-09-12T23:08:56Z",
       "id": "runtime/test/test_prompt_guard_modes.py"
     },
     {
@@ -1183,7 +1183,7 @@
         "test_an_empty_anthropic_style_content_array_yields_empty_text",
         "test_every_cloud_adapter_delegates_to_a_shared_parser"
       ],
-      "last_modified": "2026-09-12T23:06:33Z",
+      "last_modified": "2026-09-12T23:08:56Z",
       "id": "runtime/test/test_provider_dispatch_cloud.py"
     },
     {
@@ -1217,7 +1217,7 @@
         "_install",
         "_Info"
       ],
-      "last_modified": "2026-09-12T23:06:33Z",
+      "last_modified": "2026-09-12T23:08:56Z",
       "id": "runtime/test/test_hitl_gate.py"
     },
     {
@@ -1226,7 +1226,7 @@
       "symbols": [
         "fake_gateway"
       ],
-      "last_modified": "2026-09-12T23:06:33Z",
+      "last_modified": "2026-09-12T23:08:56Z",
       "id": "runtime/test/_gateway_fixtures.py"
     },
     {
@@ -1284,7 +1284,7 @@
         "test_get_refuses_rather_than_guessing_when_s3_is_configured",
         "__init__"
       ],
-      "last_modified": "2026-09-12T23:06:33Z",
+      "last_modified": "2026-09-12T23:08:56Z",
       "id": "runtime/test/test_trace_redactor.py"
     },
     {
@@ -1308,7 +1308,7 @@
         "explode",
         "__repr__"
       ],
-      "last_modified": "2026-09-12T23:06:33Z",
+      "last_modified": "2026-09-12T23:08:56Z",
       "id": "runtime/test/test_tool_payloads.py"
     },
     {
@@ -1323,7 +1323,7 @@
         "test_llm_gateway_reexports_register",
         "classifier"
       ],
-      "last_modified": "2026-09-12T23:06:33Z",
+      "last_modified": "2026-09-12T23:08:56Z",
       "id": "runtime/test/test_moderation.py"
     },
     {
@@ -1349,7 +1349,7 @@
         "test_a_truncated_first_fence_falls_through_to_the_next",
         "test_a_prose_fence_falls_through_to_bare_json"
       ],
-      "last_modified": "2026-09-12T23:06:33Z",
+      "last_modified": "2026-09-12T23:08:56Z",
       "id": "runtime/test/test_structured_output.py"
     },
     {
@@ -1369,7 +1369,7 @@
         "signal",
         "_I"
       ],
-      "last_modified": "2026-09-12T23:06:33Z",
+      "last_modified": "2026-09-12T23:08:56Z",
       "id": "runtime/test/test_self_correction_workflow.py"
     },
     {
@@ -1382,7 +1382,7 @@
         "test_guardrail_off_reports_nothing",
         "test_result_defaults_are_independent_instances"
       ],
-      "last_modified": "2026-09-12T23:06:33Z",
+      "last_modified": "2026-09-12T23:08:56Z",
       "id": "runtime/test/test_guardrail_evidence.py"
     },
     {
@@ -1395,7 +1395,7 @@
         "test_a_missing_address_falls_back_rather_than_raising",
         "test_no_caller_builds_its_own_temporal_connection"
       ],
-      "last_modified": "2026-09-12T23:06:33Z",
+      "last_modified": "2026-09-12T23:08:56Z",
       "id": "runtime/test/test_temporal_client.py"
     },
     {
@@ -1416,7 +1416,7 @@
         "text",
         "aiter_lines"
       ],
-      "last_modified": "2026-09-12T23:06:33Z",
+      "last_modified": "2026-09-12T23:08:56Z",
       "id": "runtime/test/test_ttft_stream.py"
     },
     {
@@ -1436,7 +1436,7 @@
         "test_the_portal_resolver_still_guards_the_doubled_suffix",
         "test_no_module_hand_rolls_the_signal_path_any_more"
       ],
-      "last_modified": "2026-09-12T23:06:33Z",
+      "last_modified": "2026-09-12T23:08:56Z",
       "id": "runtime/test/test_otlp_endpoint.py"
     },
     {
@@ -1471,7 +1471,7 @@
         "__exit__",
         "embed"
       ],
-      "last_modified": "2026-09-12T23:06:33Z",
+      "last_modified": "2026-09-12T23:08:56Z",
       "id": "runtime/test/test_memory_and_vector.py"
     },
     {
@@ -1486,7 +1486,7 @@
         "test_every_worker_entrypoint_configures_telemetry",
         "test_env_is_loaded_before_telemetry_reads_it"
       ],
-      "last_modified": "2026-09-12T23:06:33Z",
+      "last_modified": "2026-09-12T23:08:56Z",
       "id": "runtime/test/test_telemetry_wiring.py"
     },
     {
@@ -1503,7 +1503,7 @@
         "test_message_list_prompts_are_flattened_for_assertions",
         "test_recording_gateway_wraps_and_delegates"
       ],
-      "last_modified": "2026-09-12T23:06:33Z",
+      "last_modified": "2026-09-12T23:08:56Z",
       "id": "runtime/test/test_testing_doubles.py"
     },
     {
@@ -1515,7 +1515,7 @@
         "test_recorded_prompts_stay_assertable",
         "test_the_two_converters_are_one_function"
       ],
-      "last_modified": "2026-09-12T23:06:33Z",
+      "last_modified": "2026-09-12T23:08:56Z",
       "id": "runtime/test/test_testing_double_parity.py"
     },
     {
@@ -1530,7 +1530,7 @@
         "test_a_reset_or_retried_run_does_not_collide_with_the_previous_one",
         "test_each_attempt_and_each_gate_files_separately"
       ],
-      "last_modified": "2026-09-12T23:06:33Z",
+      "last_modified": "2026-09-12T23:08:56Z",
       "id": "runtime/test/test_dead_letter.py"
     },
     {
@@ -1567,7 +1567,7 @@
         "test_one_truthy_catalog_across_the_runtime",
         "_build"
       ],
-      "last_modified": "2026-09-12T23:06:33Z",
+      "last_modified": "2026-09-12T23:08:56Z",
       "id": "runtime/test/test_config.py"
     },
     {
@@ -1594,7 +1594,7 @@
         "test_the_scrubbed_text_keeps_the_users_own_characters",
         "custom"
       ],
-      "last_modified": "2026-09-12T23:06:33Z",
+      "last_modified": "2026-09-12T23:08:56Z",
       "id": "runtime/test/test_input_guardrail.py"
     },
     {
@@ -1613,7 +1613,7 @@
         "test_the_legacy_tenant_id_env_var_is_still_accepted",
         "_write"
       ],
-      "last_modified": "2026-09-12T23:06:33Z",
+      "last_modified": "2026-09-12T23:08:56Z",
       "id": "runtime/test/test_tenancy.py"
     },
     {
@@ -1635,7 +1635,7 @@
         "activity",
         "R"
       ],
-      "last_modified": "2026-09-12T23:06:33Z",
+      "last_modified": "2026-09-12T23:08:56Z",
       "id": "runtime/test/test_self_correction.py"
     },
     {
@@ -1657,7 +1657,7 @@
         "_FakeHttpx",
         "post"
       ],
-      "last_modified": "2026-09-12T23:06:33Z",
+      "last_modified": "2026-09-12T23:08:56Z",
       "id": "runtime/test/test_context_propagation.py"
     },
     {
@@ -1676,7 +1676,7 @@
         "__init__",
         "__call__"
       ],
-      "last_modified": "2026-09-12T23:06:33Z",
+      "last_modified": "2026-09-12T23:08:56Z",
       "id": "runtime/test/test_dlq_replay_idempotency.py"
     },
     {
@@ -1688,7 +1688,7 @@
         "test_concurrent_reserves_never_exceed_cap",
         "one"
       ],
-      "last_modified": "2026-09-12T23:06:33Z",
+      "last_modified": "2026-09-12T23:08:56Z",
       "id": "runtime/test/test_pg_budget_live.py"
     },
     {
@@ -1706,7 +1706,7 @@
         "test_the_block_alias_still_maps_to_default",
         "_write"
       ],
-      "last_modified": "2026-09-12T23:06:33Z",
+      "last_modified": "2026-09-12T23:08:56Z",
       "id": "runtime/test/test_config_choices.py"
     },
     {
@@ -1744,7 +1744,7 @@
         "test_the_declared_version_follows_the_module_not_a_literal",
         "test_the_declared_version_carries_no_source_marker"
       ],
-      "last_modified": "2026-09-12T23:06:33Z",
+      "last_modified": "2026-09-12T23:08:56Z",
       "id": "runtime/test/test_cli.py"
     },
     {
@@ -1754,7 +1754,7 @@
         "test_workflow_stays_alive_and_resumes_with_human_fix",
         "test_retries_exactly_once_not_temporals_default_policy"
       ],
-      "last_modified": "2026-09-12T23:06:33Z",
+      "last_modified": "2026-09-12T23:08:56Z",
       "id": "runtime/test/test_recoverable_step.py"
     },
     {
@@ -1779,7 +1779,7 @@
         "test_the_signature_matches_the_portal_byte_for_byte",
         "test_signatures_are_compared_in_constant_time"
       ],
-      "last_modified": "2026-09-12T23:06:33Z",
+      "last_modified": "2026-09-12T23:08:56Z",
       "id": "runtime/test/test_replay_webhook_signature.py"
     },
     {
@@ -1803,7 +1803,7 @@
         "_block",
         "_invoke"
       ],
-      "last_modified": "2026-09-12T23:06:33Z",
+      "last_modified": "2026-09-12T23:08:56Z",
       "id": "runtime/test/test_moderation_declared.py"
     },
     {
@@ -1820,14 +1820,14 @@
         "test_without_a_start_time_no_synthetic_span_is_invented",
         "test_attributes_land_on_the_enclosing_span"
       ],
-      "last_modified": "2026-09-12T23:06:33Z",
+      "last_modified": "2026-09-12T23:08:56Z",
       "id": "runtime/test/test_gateway_span_usage.py"
     },
     {
       "node_type": "CodebaseFile",
       "language": "python",
       "symbols": [],
-      "last_modified": "2026-09-12T23:06:33Z",
+      "last_modified": "2026-09-12T23:08:56Z",
       "id": "runtime/workflows/__init__.py"
     },
     {
@@ -1852,7 +1852,7 @@
         "human_fix_payload",
         "signal"
       ],
-      "last_modified": "2026-09-12T23:06:33Z",
+      "last_modified": "2026-09-12T23:08:56Z",
       "id": "runtime/workflows/base_workflow.py"
     },
     {
@@ -1874,7 +1874,7 @@
         "record_exception",
         "start_as_current_span"
       ],
-      "last_modified": "2026-09-12T23:06:33Z",
+      "last_modified": "2026-09-12T23:08:56Z",
       "id": "scripts/local_agent_stack.py"
     },
     {
@@ -1888,7 +1888,7 @@
         "_annotate_shadow_result",
         "run_shadow_eval"
       ],
-      "last_modified": "2026-09-12T23:06:33Z",
+      "last_modified": "2026-09-12T23:08:56Z",
       "id": "scripts/shadow-eval.py"
     },
     {
@@ -1900,7 +1900,7 @@
         "measure_ttft_ms",
         "main"
       ],
-      "last_modified": "2026-09-12T23:06:33Z",
+      "last_modified": "2026-09-12T23:08:56Z",
       "id": "scripts/verify_ttft.py"
     },
     {
@@ -1913,7 +1913,7 @@
         "_fetch_span",
         "sync"
       ],
-      "last_modified": "2026-09-12T23:06:33Z",
+      "last_modified": "2026-09-12T23:08:56Z",
       "id": "scripts/sync-ui-feedback.py"
     },
     {
@@ -1937,7 +1937,7 @@
         "stats",
         "as_json"
       ],
-      "last_modified": "2026-09-12T23:06:33Z",
+      "last_modified": "2026-09-12T23:08:56Z",
       "id": "scripts/local_knowledge_graph.py"
     },
     {
@@ -1974,7 +1974,7 @@
         "_write_results",
         "is_model_gone"
       ],
-      "last_modified": "2026-09-12T23:06:33Z",
+      "last_modified": "2026-09-12T23:08:56Z",
       "id": "scripts/run-evals.py"
     },
     {
@@ -1987,7 +1987,7 @@
         "_resolve_exit",
         "main"
       ],
-      "last_modified": "2026-09-12T23:06:33Z",
+      "last_modified": "2026-09-12T23:08:56Z",
       "id": "scripts/run-security-checks.py"
     },
     {
@@ -2002,7 +2002,7 @@
         "_load_json",
         "_save_json"
       ],
-      "last_modified": "2026-09-12T23:06:33Z",
+      "last_modified": "2026-09-12T23:08:56Z",
       "id": "scripts/promote-learning.py"
     },
     {
@@ -2023,7 +2023,7 @@
         "resolve_hitl",
         "unresolved_issues"
       ],
-      "last_modified": "2026-09-12T23:06:33Z",
+      "last_modified": "2026-09-12T23:08:56Z",
       "id": "scripts/agent_logger.py"
     },
     {
@@ -2039,7 +2039,7 @@
         "_post",
         "_dispatch"
       ],
-      "last_modified": "2026-09-12T23:06:33Z",
+      "last_modified": "2026-09-12T23:08:56Z",
       "id": "scripts/notifier.py"
     },
     {
@@ -2048,7 +2048,7 @@
       "symbols": [
         "main"
       ],
-      "last_modified": "2026-09-12T23:06:33Z",
+      "last_modified": "2026-09-12T23:08:56Z",
       "id": "scripts/verify_judge_route.py"
     },
     {
@@ -2060,7 +2060,7 @@
         "tenant_yaml_path",
         "check_tenant_against_policy"
       ],
-      "last_modified": "2026-09-12T23:06:33Z",
+      "last_modified": "2026-09-12T23:08:56Z",
       "id": "scripts/delivery_model.py"
     },
     {
@@ -2094,7 +2094,7 @@
         "enabled",
         "wait"
       ],
-      "last_modified": "2026-09-12T23:06:33Z",
+      "last_modified": "2026-09-12T23:08:56Z",
       "id": "scripts/_shared.py"
     },
     {
@@ -2107,7 +2107,7 @@
         "_notify_offline",
         "_notify_recovery"
       ],
-      "last_modified": "2026-09-12T23:06:33Z",
+      "last_modified": "2026-09-12T23:08:56Z",
       "id": "scripts/network_watchdog.py"
     },
     {
@@ -2125,7 +2125,7 @@
         "reset_monthly",
         "__init__"
       ],
-      "last_modified": "2026-09-12T23:06:33Z",
+      "last_modified": "2026-09-12T23:08:56Z",
       "id": "scripts/circuit_breaker.py"
     },
     {
@@ -2151,7 +2151,7 @@
         "write_evidence_pack",
         "main"
       ],
-      "last_modified": "2026-09-12T23:06:33Z",
+      "last_modified": "2026-09-12T23:08:56Z",
       "id": "scripts/delivery_evidence.py"
     },
     {
@@ -2164,7 +2164,7 @@
         "_entry_id",
         "sync"
       ],
-      "last_modified": "2026-09-12T23:06:33Z",
+      "last_modified": "2026-09-12T23:08:56Z",
       "id": "scripts/sync-portal-history.py"
     },
     {
@@ -2190,7 +2190,7 @@
         "__init__",
         "__repr__"
       ],
-      "last_modified": "2026-09-12T23:06:33Z",
+      "last_modified": "2026-09-12T23:08:56Z",
       "id": "scripts/cost_router.py"
     },
     {
@@ -2204,7 +2204,7 @@
         "_generate_local_hf",
         "main"
       ],
-      "last_modified": "2026-09-12T23:06:33Z",
+      "last_modified": "2026-09-12T23:08:56Z",
       "id": "scripts/verify_sovereign_endpoint.py"
     },
     {
@@ -2215,7 +2215,7 @@
         "find_violations",
         "main"
       ],
-      "last_modified": "2026-09-12T23:06:33Z",
+      "last_modified": "2026-09-12T23:08:56Z",
       "id": "scripts/check_bare_except.py"
     },
     {
@@ -2236,7 +2236,7 @@
         "main",
         "_check_drift"
       ],
-      "last_modified": "2026-09-12T23:06:33Z",
+      "last_modified": "2026-09-12T23:08:56Z",
       "id": "scripts/generate-ide-config.py"
     },
     {
@@ -2253,7 +2253,7 @@
         "_resolve_local_import",
         "run_map"
       ],
-      "last_modified": "2026-09-12T23:06:33Z",
+      "last_modified": "2026-09-12T23:08:56Z",
       "id": "scripts/map_codebase.py"
     },
     {
@@ -2282,7 +2282,7 @@
         "set_attribute",
         "record_exception"
       ],
-      "last_modified": "2026-09-12T23:06:33Z",
+      "last_modified": "2026-09-12T23:08:56Z",
       "id": "scripts/multi_agent_system.py"
     },
     {
@@ -2301,7 +2301,7 @@
         "main",
         "_restore"
       ],
-      "last_modified": "2026-09-12T23:06:33Z",
+      "last_modified": "2026-09-12T23:08:56Z",
       "id": "scripts/mutation_check.py"
     },
     {
@@ -2315,7 +2315,7 @@
         "criteria_digest",
         "judge_case"
       ],
-      "last_modified": "2026-09-12T23:06:33Z",
+      "last_modified": "2026-09-12T23:08:56Z",
       "id": "scripts/eval_judge.py"
     },
     {
@@ -2340,7 +2340,7 @@
         "_run",
         "_git_repo"
       ],
-      "last_modified": "2026-09-12T23:06:33Z",
+      "last_modified": "2026-09-12T23:08:56Z",
       "id": "scripts/verify_system.py"
     },
     {
@@ -2351,14 +2351,14 @@
         "ControlSpec",
         "load_control_registry"
       ],
-      "last_modified": "2026-09-12T23:06:33Z",
+      "last_modified": "2026-09-12T23:08:56Z",
       "id": "scripts/security/registry.py"
     },
     {
       "node_type": "CodebaseFile",
       "language": "python",
       "symbols": [],
-      "last_modified": "2026-09-12T23:06:33Z",
+      "last_modified": "2026-09-12T23:08:56Z",
       "id": "scripts/security/__init__.py"
     },
     {
@@ -2374,7 +2374,7 @@
         "_render_security_report_md",
         "write_evidence_pack"
       ],
-      "last_modified": "2026-09-12T23:06:33Z",
+      "last_modified": "2026-09-12T23:08:56Z",
       "id": "scripts/security/report.py"
     },
     {
@@ -2384,7 +2384,7 @@
         "_SmokeModel",
         "run"
       ],
-      "last_modified": "2026-09-12T23:06:33Z",
+      "last_modified": "2026-09-12T23:08:56Z",
       "id": "scripts/security/runners/structured_output.py"
     },
     {
@@ -2393,7 +2393,7 @@
       "symbols": [
         "run"
       ],
-      "last_modified": "2026-09-12T23:06:33Z",
+      "last_modified": "2026-09-12T23:08:56Z",
       "id": "scripts/security/runners/pii_postcall.py"
     },
     {
@@ -2403,7 +2403,7 @@
         "_registered_tool_names",
         "run"
       ],
-      "last_modified": "2026-09-12T23:06:33Z",
+      "last_modified": "2026-09-12T23:08:56Z",
       "id": "scripts/security/runners/tool_allowlist.py"
     },
     {
@@ -2412,14 +2412,14 @@
       "symbols": [
         "run"
       ],
-      "last_modified": "2026-09-12T23:06:33Z",
+      "last_modified": "2026-09-12T23:08:56Z",
       "id": "scripts/security/runners/adversarial_eval.py"
     },
     {
       "node_type": "CodebaseFile",
       "language": "python",
       "symbols": [],
-      "last_modified": "2026-09-12T23:06:33Z",
+      "last_modified": "2026-09-12T23:08:56Z",
       "id": "scripts/security/runners/__init__.py"
     },
     {
@@ -2441,7 +2441,7 @@
         "agency_manifest",
         "gateway_static"
       ],
-      "last_modified": "2026-09-12T23:06:33Z",
+      "last_modified": "2026-09-12T23:08:56Z",
       "id": "scripts/security/runners/delegating.py"
     },
     {
@@ -2450,7 +2450,7 @@
       "symbols": [
         "run"
       ],
-      "last_modified": "2026-09-12T23:06:33Z",
+      "last_modified": "2026-09-12T23:08:56Z",
       "id": "scripts/security/runners/sso_revocation.py"
     },
     {
@@ -2472,7 +2472,7 @@
         "security_fixture",
         "node_suite"
       ],
-      "last_modified": "2026-09-12T23:06:33Z",
+      "last_modified": "2026-09-12T23:08:56Z",
       "id": "scripts/security/runners/_shared.py"
     },
     {
@@ -2481,7 +2481,7 @@
       "symbols": [
         "run"
       ],
-      "last_modified": "2026-09-12T23:06:33Z",
+      "last_modified": "2026-09-12T23:08:56Z",
       "id": "scripts/security/runners/moderation_hook.py"
     },
     {
@@ -2490,7 +2490,7 @@
       "symbols": [
         "run"
       ],
-      "last_modified": "2026-09-12T23:06:33Z",
+      "last_modified": "2026-09-12T23:08:56Z",
       "id": "scripts/security/runners/prompt_guard.py"
     },
     {
@@ -2499,7 +2499,7 @@
       "symbols": [
         "run"
       ],
-      "last_modified": "2026-09-12T23:06:33Z",
+      "last_modified": "2026-09-12T23:08:56Z",
       "id": "scripts/security/runners/pii_precall.py"
     },
     {
@@ -2510,7 +2510,7 @@
         "_violations",
         "run"
       ],
-      "last_modified": "2026-09-12T23:06:33Z",
+      "last_modified": "2026-09-12T23:08:56Z",
       "id": "scripts/security/runners/sovereign_residency.py"
     },
     {
@@ -2519,7 +2519,7 @@
       "symbols": [
         "run"
       ],
-      "last_modified": "2026-09-12T23:06:33Z",
+      "last_modified": "2026-09-12T23:08:56Z",
       "id": "scripts/security/runners/noop.py"
     },
     {
@@ -2530,7 +2530,7 @@
         "_template_path",
         "run"
       ],
-      "last_modified": "2026-09-12T23:06:33Z",
+      "last_modified": "2026-09-12T23:08:56Z",
       "id": "scripts/security/runners/risk_register.py"
     },
     {
@@ -2568,7 +2568,7 @@
       "title": "REQUIREMENTS & DESIGN",
       "source_file": "/private/tmp/claude-501/-Users-mac-Documents-Bobby-Aqlaar-Apps-AgenticFramework/92e565e8-476c-4022-8d70-988bb3852adf/scratchpad/ts-tenant/.cursorrules",
       "pillar": 1,
-      "created_at": "2026-09-12T23:06:34Z",
+      "created_at": "2026-09-12T23:08:57Z",
       "id": "cursorrules:pillar:1"
     },
     {
@@ -2576,7 +2576,7 @@
       "title": "BUILD ARCHITECTURE (Ponytail Rules)",
       "source_file": "/private/tmp/claude-501/-Users-mac-Documents-Bobby-Aqlaar-Apps-AgenticFramework/92e565e8-476c-4022-8d70-988bb3852adf/scratchpad/ts-tenant/.cursorrules",
       "pillar": 2,
-      "created_at": "2026-09-12T23:06:34Z",
+      "created_at": "2026-09-12T23:08:57Z",
       "id": "cursorrules:pillar:2"
     },
     {
@@ -2584,7 +2584,7 @@
       "title": "TRACING & EVALUATIONS",
       "source_file": "/private/tmp/claude-501/-Users-mac-Documents-Bobby-Aqlaar-Apps-AgenticFramework/92e565e8-476c-4022-8d70-988bb3852adf/scratchpad/ts-tenant/.cursorrules",
       "pillar": 3,
-      "created_at": "2026-09-12T23:06:34Z",
+      "created_at": "2026-09-12T23:08:57Z",
       "id": "cursorrules:pillar:3"
     },
     {
@@ -2592,7 +2592,7 @@
       "title": "TESTING GUARDRAILS",
       "source_file": "/private/tmp/claude-501/-Users-mac-Documents-Bobby-Aqlaar-Apps-AgenticFramework/92e565e8-476c-4022-8d70-988bb3852adf/scratchpad/ts-tenant/.cursorrules",
       "pillar": 4,
-      "created_at": "2026-09-12T23:06:34Z",
+      "created_at": "2026-09-12T23:08:57Z",
       "id": "cursorrules:pillar:4"
     },
     {
@@ -2600,7 +2600,7 @@
       "title": "OPERATIONS & SELF-IMPROVEMENT",
       "source_file": "/private/tmp/claude-501/-Users-mac-Documents-Bobby-Aqlaar-Apps-AgenticFramework/92e565e8-476c-4022-8d70-988bb3852adf/scratchpad/ts-tenant/.cursorrules",
       "pillar": 5,
-      "created_at": "2026-09-12T23:06:34Z",
+      "created_at": "2026-09-12T23:08:57Z",
       "id": "cursorrules:pillar:5"
     },
     {
@@ -2608,7 +2608,7 @@
       "title": "INTERFACE CONSTRAINTS (Caveman Compression)",
       "source_file": "/private/tmp/claude-501/-Users-mac-Documents-Bobby-Aqlaar-Apps-AgenticFramework/92e565e8-476c-4022-8d70-988bb3852adf/scratchpad/ts-tenant/.cursorrules",
       "pillar": 6,
-      "created_at": "2026-09-12T23:06:34Z",
+      "created_at": "2026-09-12T23:08:57Z",
       "id": "cursorrules:pillar:6"
     },
     {
@@ -2616,7 +2616,7 @@
       "title": "STACK-SPECIFIC RULES",
       "source_file": "/private/tmp/claude-501/-Users-mac-Documents-Bobby-Aqlaar-Apps-AgenticFramework/92e565e8-476c-4022-8d70-988bb3852adf/scratchpad/ts-tenant/.cursorrules",
       "pillar": 7,
-      "created_at": "2026-09-12T23:06:34Z",
+      "created_at": "2026-09-12T23:08:57Z",
       "id": "cursorrules:pillar:7"
     },
     {
@@ -2624,7 +2624,7 @@
       "title": "OBSERVABILITY WIRE",
       "source_file": "/private/tmp/claude-501/-Users-mac-Documents-Bobby-Aqlaar-Apps-AgenticFramework/92e565e8-476c-4022-8d70-988bb3852adf/scratchpad/ts-tenant/.cursorrules",
       "pillar": 8,
-      "created_at": "2026-09-12T23:06:34Z",
+      "created_at": "2026-09-12T23:08:57Z",
       "id": "cursorrules:pillar:8"
     },
     {
@@ -2632,7 +2632,7 @@
       "title": "MULTI-AGENT ORCHESTRATION",
       "source_file": "/private/tmp/claude-501/-Users-mac-Documents-Bobby-Aqlaar-Apps-AgenticFramework/92e565e8-476c-4022-8d70-988bb3852adf/scratchpad/ts-tenant/.cursorrules",
       "pillar": 9,
-      "created_at": "2026-09-12T23:06:34Z",
+      "created_at": "2026-09-12T23:08:57Z",
       "id": "cursorrules:pillar:9"
     },
     {
@@ -2640,7 +2640,7 @@
       "title": "COST-OPTIMISATION ROUTING",
       "source_file": "/private/tmp/claude-501/-Users-mac-Documents-Bobby-Aqlaar-Apps-AgenticFramework/92e565e8-476c-4022-8d70-988bb3852adf/scratchpad/ts-tenant/.cursorrules",
       "pillar": 10,
-      "created_at": "2026-09-12T23:06:34Z",
+      "created_at": "2026-09-12T23:08:57Z",
       "id": "cursorrules:pillar:10"
     },
     {
@@ -2648,7 +2648,7 @@
       "title": "UNTRUSTED CONTENT",
       "source_file": "/private/tmp/claude-501/-Users-mac-Documents-Bobby-Aqlaar-Apps-AgenticFramework/92e565e8-476c-4022-8d70-988bb3852adf/scratchpad/ts-tenant/.cursorrules",
       "pillar": 11,
-      "created_at": "2026-09-12T23:06:34Z",
+      "created_at": "2026-09-12T23:08:57Z",
       "id": "cursorrules:pillar:11"
     },
     {
@@ -2656,7 +2656,7 @@
       "title": "SECRETS AND CREDENTIALS",
       "source_file": "/private/tmp/claude-501/-Users-mac-Documents-Bobby-Aqlaar-Apps-AgenticFramework/92e565e8-476c-4022-8d70-988bb3852adf/scratchpad/ts-tenant/.cursorrules",
       "pillar": 12,
-      "created_at": "2026-09-12T23:06:34Z",
+      "created_at": "2026-09-12T23:08:57Z",
       "id": "cursorrules:pillar:12"
     },
     {
@@ -2664,7 +2664,7 @@
       "title": "GATE INTEGRITY",
       "source_file": "/private/tmp/claude-501/-Users-mac-Documents-Bobby-Aqlaar-Apps-AgenticFramework/92e565e8-476c-4022-8d70-988bb3852adf/scratchpad/ts-tenant/.cursorrules",
       "pillar": 13,
-      "created_at": "2026-09-12T23:06:34Z",
+      "created_at": "2026-09-12T23:08:57Z",
       "id": "cursorrules:pillar:13"
     },
     {
@@ -2672,7 +2672,7 @@
       "title": "FIXTURE AND BASELINE DRIFT",
       "source_file": "/private/tmp/claude-501/-Users-mac-Documents-Bobby-Aqlaar-Apps-AgenticFramework/92e565e8-476c-4022-8d70-988bb3852adf/scratchpad/ts-tenant/.cursorrules",
       "pillar": 14,
-      "created_at": "2026-09-12T23:06:34Z",
+      "created_at": "2026-09-12T23:08:57Z",
       "id": "cursorrules:pillar:14"
     },
     {
@@ -2680,7 +2680,7 @@
       "title": "AMBIGUOUS SIGNALS",
       "source_file": "/private/tmp/claude-501/-Users-mac-Documents-Bobby-Aqlaar-Apps-AgenticFramework/92e565e8-476c-4022-8d70-988bb3852adf/scratchpad/ts-tenant/.cursorrules",
       "pillar": 15,
-      "created_at": "2026-09-12T23:06:34Z",
+      "created_at": "2026-09-12T23:08:57Z",
       "id": "cursorrules:pillar:15"
     },
     {
@@ -2688,7 +2688,7 @@
       "title": "RECOVERY PATHS",
       "source_file": "/private/tmp/claude-501/-Users-mac-Documents-Bobby-Aqlaar-Apps-AgenticFramework/92e565e8-476c-4022-8d70-988bb3852adf/scratchpad/ts-tenant/.cursorrules",
       "pillar": 16,
-      "created_at": "2026-09-12T23:06:34Z",
+      "created_at": "2026-09-12T23:08:57Z",
       "id": "cursorrules:pillar:16"
     },
     {
@@ -2696,7 +2696,7 @@
       "title": "TS-REACT ADDENDUM",
       "source_file": "/private/tmp/claude-501/-Users-mac-Documents-Bobby-Aqlaar-Apps-AgenticFramework/92e565e8-476c-4022-8d70-988bb3852adf/scratchpad/ts-tenant/.cursorrules",
       "pillar": 17,
-      "created_at": "2026-09-12T23:06:34Z",
+      "created_at": "2026-09-12T23:08:57Z",
       "id": "cursorrules:pillar:17"
     },
     {
@@ -2704,7 +2704,7 @@
       "title": "DESIGN & VALIDATION PLAYBOOKS",
       "source_file": "/private/tmp/claude-501/-Users-mac-Documents-Bobby-Aqlaar-Apps-AgenticFramework/92e565e8-476c-4022-8d70-988bb3852adf/scratchpad/ts-tenant/.cursorrules",
       "pillar": 18,
-      "created_at": "2026-09-12T23:06:34Z",
+      "created_at": "2026-09-12T23:08:57Z",
       "id": "cursorrules:pillar:18"
     }
   ],
