@@ -22,11 +22,47 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      # The lockfile decides the package manager. This template assumed npm
+      # (`cache: npm` + `npm ci`), so a pnpm project failed setup-node before
+      # any check ran. A project without a lockfile fails here, by name: CI
+      # installs exactly what the lockfile pins, or nothing.
+      - name: Detect package manager
+        id: pm
+        run: |
+          if [ -f pnpm-lock.yaml ]; then
+            pm=pnpm
+          elif [ -f package-lock.json ] || [ -f npm-shrinkwrap.json ]; then
+            pm=npm
+          elif [ -f yarn.lock ] || [ -f bun.lock ] || [ -f bun.lockb ]; then
+            echo "::error::yarn and bun lockfiles are not supported by this template yet — use npm or pnpm, or adapt the install steps"
+            exit 1
+          else
+            echo "::error::no lockfile — commit package-lock.json (npm) or pnpm-lock.yaml (pnpm)"
+            exit 1
+          fi
+          # pnpm/action-setup reads the version from package.json's
+          # `packageManager` and refuses a second one given here, so pass a
+          # version only when the project does not pin one.
+          version=""
+          if [ "$pm" = pnpm ] && ! node -e 'process.exit(require("./package.json").packageManager ? 0 : 1)'; then
+            version=10
+          fi
+          echo "pm=$pm" >> "$GITHUB_OUTPUT"
+          echo "pnpm_version=$version" >> "$GITHUB_OUTPUT"
+          echo "PM=$pm" >> "$GITHUB_ENV"
+
+      # Before setup-node: its pnpm cache needs pnpm on PATH.
+      - name: Setup pnpm
+        if: steps.pm.outputs.pm == 'pnpm'
+        uses: pnpm/action-setup@v4
+        with:
+          version: ${{ steps.pm.outputs.pnpm_version }}
+
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: "20"
-          cache: "npm"
+          cache: ${{ steps.pm.outputs.pm }}
 
       - name: Setup Python
         uses: actions/setup-python@v5
@@ -37,7 +73,12 @@ jobs:
         run: pip install pyyaml networkx
 
       - name: Install dependencies
-        run: npm ci
+        run: |
+          if [ "$PM" = pnpm ]; then
+            pnpm install --frozen-lockfile
+          else
+            npm ci
+          fi
 
       # A project's own `typecheck` script wins; otherwise `tsc -b --noEmit`,
       # which follows project references. `npm run tsc` assumed a script no
@@ -46,13 +87,17 @@ jobs:
       - name: Type check
         run: |
           if node -e 'process.exit(require("./package.json").scripts?.typecheck ? 0 : 1)'; then
-            npm run typecheck
+            "$PM" run typecheck
+          elif [ "$PM" = pnpm ]; then
+            pnpm exec tsc -b --noEmit
           else
             npx --no-install tsc -b --noEmit
           fi
 
+      # --if-present BEFORE the script name: pnpm passes anything after it to
+      # the script itself. npm accepts it in either place.
       - name: Lint
-        run: npm run lint --if-present
+        run: '"$PM" run --if-present lint'
 
       - name: "Validate Knowledge Graph (Pillar 2)"
         run: |
@@ -109,7 +154,7 @@ jobs:
       - name: Unit tests
         env:
           CI: "true"
-        run: npm test
+        run: '"$PM" test'
 
   eval-scorecard:
     name: "Eval scorecard"
