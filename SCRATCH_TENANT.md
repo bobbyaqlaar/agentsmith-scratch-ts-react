@@ -1,18 +1,13 @@
-# Scratch tenant — managed by automation
+# Scratch tenant — built by automation, do not edit here
 
-This repository is a **test fixture for AgentSmith**, not a product. A small
-app is onboarded by AgentSmith's provisioning hook so that tenant CI runs for
-real on GitHub.
+This repository is a **test fixture for AgentSmith**, not a product, and every
+file in it is generated. AgentSmith's **Scratch tenants** workflow rebuilds it
+from the framework (weekly, and whenever provisioning changes): it copies the
+app from AgentSmith's `.github/scratch-tenants/apps/<stack>/`, runs the
+provisioning hook, pushes the result, and fails unless this repo's CI goes
+green.
 
-AgentSmith's **Scratch tenants** workflow re-provisions this repo from the
-current framework (weekly, and whenever provisioning changes), pushes the
-result, and fails unless this repo's CI goes green.
+**To change the app, change it in AgentSmith.** A commit made directly here
+makes the next build fail rather than silently overwrite it.
 
-- **Provisioned (overwritten every run — don't edit here):** `.github/`,
-  `runtime/`, `fixtures/`, vendored `scripts/`, `.agents/`, `.cursorrules`,
-  `CLAUDE.md`, `AGENTS.md`, `GEMINI.md`, `.agent-rfc/` except `security/`.
-- **Owned by this repo (edit freely):** the app, `.agent-rfc/security/`, and
-  anything else not listed above.
-
-Full documentation, setup and triage:
-https://github.com/bobbyaqlaar/AgentSmith/blob/main/docs/scratch-tenants.md
+Documentation, setup and triage: `docs/scratch-tenants.md` in AgentSmith.

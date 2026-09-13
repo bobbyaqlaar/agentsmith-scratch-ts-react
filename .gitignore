@@ -22,30 +22,3 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
-
-# AgentSmith — IDE configs (system prompt content)
-.cursorrules
-CLAUDE.md
-AGENTS.md
-GEMINI.md
-.github/copilot-instructions.md
-.agents/
-.agent-history.log
-
-# AgentSmith — IDE configs (system prompt content)
-.cursorrules
-CLAUDE.md
-AGENTS.md
-GEMINI.md
-.github/copilot-instructions.md
-.agents/
-.agent-history.log
-
-# AgentSmith — IDE configs (system prompt content)
-.cursorrules
-CLAUDE.md
-AGENTS.md
-GEMINI.md
-.github/copilot-instructions.md
-.agents/
-.agent-history.log
